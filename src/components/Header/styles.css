@@ -22,11 +22,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-
-    /* border: 2px solid white;
-    border-radius: 30px; */
-
-
 }
 
 .nav-header-options {
@@ -38,12 +33,16 @@
     align-items: center;
     justify-content: center;
 
-    background-color: rgb(175, 175, 238);
+    background-color: rgb(72, 72, 241);
 
-    border: 2px solid white;
     border-radius: 20px;
 
     cursor: pointer;
+}
+
+.nav-header-options:hover {
+    background-color: rgb(95, 95, 250);
+    border: 2px solid white;
 }
 
 .social-midia-icons {

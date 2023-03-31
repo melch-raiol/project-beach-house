@@ -38,54 +38,33 @@ function Header() {
                 >
                     Home
                 </div>
-
                 <div
                     className='nav-header-options'
                     onClick={() => handleAboutUs()}
                 >
                     Sobre Somos
                 </div>
-
-                <div
-                    className='nav-header-options'
-                    onClick={() => handleContact()}
-                >
-                    Contato
-                </div>
-
-                <div
-                    className='nav-header-options'
-                    onClick={() => handleBook()}
-                >
-                    Reservas
-                </div>
-
                 <div
                     className='nav-header-options'
                     onClick={() => handleApartments()}
                 >
                     Apartamentos
                 </div>
+                <div
+                    className='nav-header-options'
+                    onClick={() => handleContact()}
+                >
+                    Contato
+                </div>
             </nav>
-
             <div className='social-midia-icons'>
-
-                <a target='_blank' href='https://www.facebook.com/profile.php?id=100064833496849'>
-                    <img
-                        className='social-midia-icons-facebook'
-                        src={ImgFacebook}
-                    />
-                </a>
-
-                <a target='_blank' href='https://instagram.com/casas_da_sepultura.oficial?igshid=ZDdkNTZiNTM='>
-
-                    <img
-                        className='social-midia-icons-instagram'
-                        src={ImgInstagram}
-                    />
-                </a>
+                <div
+                    className='nav-header-options'
+                    onClick={() => handleBook()}
+                >
+                    Reservas
+                </div>
             </div>
-
         </header>
     )
 };
