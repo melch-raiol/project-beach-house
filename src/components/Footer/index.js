@@ -6,7 +6,7 @@ function Footer() {
 
     return (
         <footer className='container-footer'>
-            <div className='address'>
+            <div className='address-footer'>
                 <span>Endereço:</span>
                 <span>Rua Chincharro, 309 - Centro, Bombinhas / SC</span>
 
