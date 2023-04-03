@@ -15,21 +15,8 @@
     position: fixed;
 }
 
-.title-contact {
-    height: 40px;
-    width: 80px;
-
-    margin-top: 150px;
-    margin-right: 56%;
-    position: absolute;
-
-    background-color: white;
-
-    border: 2px solid white;
-}
-
 .container-form {
-    height: 400px;
+    height: 500px;
     width: 800px;
 
     display: flex;
@@ -44,6 +31,24 @@
     backdrop-filter: blur(50px);
 
     border-radius: 20px;
+    border: 2px solid white;
+}
+
+.title-contact {
+    height: 40px;
+    width: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 400px;
+
+    position: absolute;
+
+    background-color: white;
+
+    border-radius: 10px;
     border: 2px solid white;
 }
 
@@ -76,4 +81,11 @@
     width: 400px;
 
     margin-top: 10px;
+}
+
+.button-send {
+    background-color: rgb(19, 184, 19);
+    color: white;
+
+    border: 2px solid white;
 }
