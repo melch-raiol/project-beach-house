@@ -9,9 +9,11 @@
 
     color: white;
     background: linear-gradient(132deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
 
     z-index: 1;
+    top: 0;
+    border-bottom: 1px solid white;
 }
 
 .nav-header {
@@ -45,28 +47,22 @@
     border: 2px solid white;
 }
 
-.social-midia-icons {
-    width: 100px;
+@media (max-width: 768px) {
+    .container-header {
+        width: 100%;
+        height: auto;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+        flex-wrap: wrap;
 
+        margin: 2rem 0;
+    }
+
+    .nav-header-options {
+        height: 30px;
+        width: 80px;
+
+        font-size: 10px;
+    }
 }
 
-.social-midia-icons img {
-    height: 40px;
-    width: auto;
-
-
-}
-
-.social-midia-icons-facebook {
-
-    cursor: pointer;
-}
-
-.social-midia-icons-instagram {
-
-    cursor: pointer;
-}
+@media (max-width: 540px) {}
