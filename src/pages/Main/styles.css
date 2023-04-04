@@ -1,45 +1,20 @@
 .container-main {
-  height: 1500px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  position: relative;
-}
+  background-image: url('../../assets/sepul-houses-1.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
 
-.img-background-main {
-  height: auto;
-  width: 100vw;
-
-  position: fixed;
-}
-
-.houses-exhibition {
-  height: 400px;
-  width: 800px;
-
-  margin-top: 300px;
-  position: absolute;
-
-  border: 2px solid white;
+  background-attachment: fixed;
 }
 
 .address-main {
   height: 400px;
   width: 400px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-
-  margin-top: 400px;
-  padding: 10px;
-
   color: white;
 
   font-size: 25px;
-
-  position: relative;
 }

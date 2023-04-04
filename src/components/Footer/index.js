@@ -14,12 +14,11 @@ function Footer() {
 
             <div className='social-midia-icons'>
 
-                <a target='_blank' href='https://www.facebook.com/profile.php?id=100064833496849'>
-                    <img
-                        className='social-midia-icons-facebook'
-                        src={ImgFacebook}
-                    />
-                </a>
+                <img
+                    className='social-midia-icons-facebook'
+                    src={ImgFacebook}
+                />
+
 
                 <a target='_blank' href='https://instagram.com/casas_da_sepultura.oficial?igshid=ZDdkNTZiNTM='>
 

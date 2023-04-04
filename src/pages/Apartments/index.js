@@ -1,19 +1,20 @@
-import './styles.css';
+import ImgWhatsapp from '../../assets/whatsapp-icon.png';
+import Footer from '../../components/Footer';
 import Header from '../../components/Header';
-import Footer from '../../components/Footer'
-import ImgApartments from '../../assets/apartments.jpg';
 import apartments from '../../databases/databases';
+import './styles.css';
 
 function Apartments() {
     return (
         <div className='container-apartments'>
             <Header />
-            <img
-                className='img-background-contact'
-                src={ImgApartments}
-            />
-            <div className='main-apartments-selection'>
 
+            <img
+                className='img-whatsapp'
+                src={ImgWhatsapp}
+            />
+
+            <div className='main-apartments-selection'>
 
                 {apartments.map(apartment => (
                     <div className='apartaments-collection'>

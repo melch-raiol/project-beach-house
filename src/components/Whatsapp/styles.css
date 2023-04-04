@@ -1,0 +1,21 @@
+.logo-whatsapp {
+    width: 80px;
+    height: 80px;
+}
+
+.img-whatsapp {
+    width: 60px;
+    height: 60px;
+
+    bottom: 100px;
+    right: 40px;
+
+    position: fixed;
+
+    z-index: 1;
+}
+
+.img-whatsapp:hover {
+    height: 65px;
+    width: auto;
+}

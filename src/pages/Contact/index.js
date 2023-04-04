@@ -4,6 +4,7 @@ import Footer from '../../components/Footer'
 import ImgContact from '../../assets/contact.jpg';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import ImgWhatsapp from '../../assets/whatsapp-icon.png';
 
 function Contact() {
     const [name, setName] = useState('');
@@ -43,6 +44,11 @@ function Contact() {
             <img
                 className='img-background-contact'
                 src={ImgContact}
+            />
+
+            <img
+                className='img-whatsapp'
+                src={ImgWhatsapp}
             />
 
             <div className='container-form'>
