@@ -7,8 +7,8 @@
     height: 60px;
     width: auto;
 
-    bottom: 100px;
-    right: 40px;
+    bottom: 10%;
+    right: 4%;
 
     position: fixed;
 
@@ -24,5 +24,8 @@
     .img-whatsapp {
         height: 35px;
         width: auto;
+
+        bottom: 100px;
+        right: 30px;
     }
 }

@@ -35,3 +35,17 @@
 .text-about-us h2 {
     padding: 20px;
 }
+
+.text-about-us p {
+    height: 90vh;
+    width: 45vw;
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 540px) {
+    .text-about-us p {}
+
+    .text-about-us {}
+
+}

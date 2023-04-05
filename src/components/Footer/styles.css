@@ -7,14 +7,10 @@
     align-items: center;
     justify-content: space-around;
 
-
     padding: 30px 100px;
     color: black;
     background: linear-gradient(132deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(2px);
-
-
-    bottom: 0;
 }
 
 .address-footer {
@@ -55,4 +51,40 @@
 .social-midia-icons-instagram {
 
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container-footer {
+        height: 100px;
+        width: 100%;
+    }
+
+    .address-footer {
+        height: 100px;
+        width: 150px;
+
+        font-size: 12px;
+        margin-right: 40%;
+
+        border: 1px solid white;
+    }
+
+    .social-midia-icons {
+        height: 50px;
+        width: 200px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+
+        margin-right: 10px;
+
+        border: 1px solid white;
+    }
+
+    .social-midia-icons img {
+        height: 30px;
+        width: auto;
+    }
 }

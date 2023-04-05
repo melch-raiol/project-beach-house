@@ -1,18 +1,18 @@
 .container-header {
-    width: 100%;
     height: 100px;
-
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 
     color: white;
     background: linear-gradient(132deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(5px);
 
     z-index: 1;
-    top: 0;
+
     border-bottom: 1px solid white;
 }
 
@@ -42,6 +42,8 @@
     cursor: pointer;
 }
 
+.logo-beach-house {}
+
 .nav-header-options:hover {
     background-color: rgb(95, 95, 250);
     border: 2px solid white;
@@ -49,19 +51,31 @@
 
 @media (max-width: 768px) {
     .container-header {
-        width: 100%;
-        height: auto;
+        height: 140px;
+    }
 
+    .nav-header {
+        width: 90%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
         flex-wrap: wrap;
-
-        margin: 2rem 0;
     }
 
     .nav-header-options {
-        height: 30px;
-        width: 80px;
+        height: 25px;
+        width: 70px;
 
-        font-size: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        margin-bottom: 2%;
+
+        font-size: 0.6em;
     }
 }
 
