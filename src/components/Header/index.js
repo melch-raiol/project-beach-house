@@ -1,10 +1,9 @@
 import './styles.css';
-import { useNavigate } from 'react-router-dom';
-import useWindowDimension from '../WindowDimension/windowDimension';
+import ImgFacebook from '../../assets/facebook.png';
+import ImgInstagram from '../../assets/instagram.png';
+import { useNavigate, Link } from 'react-router-dom';
 
 function Header() {
-
-    const { innerWidth, innerHeight } = useWindowDimension();
 
     const navigate = useNavigate();
 
@@ -30,11 +29,7 @@ function Header() {
 
     return (
         <header className='container-header'>
-            <div
-                className='logo-beach-house'
-            >
-                LOGO
-            </div>
+            <div>LOGO</div>
 
             <nav className='nav-header' >
                 <div
@@ -61,27 +56,15 @@ function Header() {
                 >
                     Contato
                 </div>
-
-                {innerWidth <= 400 &&
-                    <div
-                        className='nav-header-options'
-                        onClick={() => handleBook()}
-                    >
-                        Reservas
-                    </div>
-                }
-
             </nav>
-            {innerWidth > 400 &&
-                <div className='social-midia-icons'>
-                    <div
-                        className='nav-header-options'
-                        onClick={() => handleBook()}
-                    >
-                        Reservas
-                    </div>
+            <div className='social-midia-icons'>
+                <div
+                    className='nav-header-options'
+                    onClick={() => handleBook()}
+                >
+                    Reservas
                 </div>
-            }
+            </div>
         </header>
     )
 };
