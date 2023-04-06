@@ -1,10 +1,10 @@
-import './styles.css';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer'
-import ImgContact from '../../assets/contact.jpg';
-import { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { useState } from 'react';
+import ImgContact from '../../assets/contact.jpg';
 import ImgWhatsapp from '../../assets/whatsapp-icon.png';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
+import './styles.css';
 
 function Contact() {
     const [name, setName] = useState('');
@@ -45,12 +45,10 @@ function Contact() {
                 className='img-background-contact'
                 src={ImgContact}
             />
-
             <img
                 className='img-whatsapp'
                 src={ImgWhatsapp}
             />
-
             <div className='container-form'>
 
                 <div className='title-contact'>
@@ -93,7 +91,6 @@ function Contact() {
                         onChange={(e) => setMessage(e.target.value)}
                         value={message}
                     />
-
                     <button
                         className='input-contact button-send'
                     >

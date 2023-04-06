@@ -1,11 +1,10 @@
-import { Routes, Route } from 'react-router-dom';
-import AboutUs from './pages/AboutUs';
-import Contact from './pages/Contact';
-import Book from './pages/Book';
-import Apartments from './pages/Apartments';
-import Main from './pages/Main';
+import { Route, Routes } from 'react-router-dom';
 import Whatsapp from './components/Whatsapp';
-
+import AboutUs from './pages/AboutUs';
+import Apartments from './pages/Apartments';
+import Book from './pages/Book';
+import Contact from './pages/Contact';
+import Main from './pages/Main';
 
 function MainRoutes() {
     return (

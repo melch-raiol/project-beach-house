@@ -1,7 +1,5 @@
+import { useNavigate } from 'react-router-dom';
 import './styles.css';
-import ImgFacebook from '../../assets/facebook.png';
-import ImgInstagram from '../../assets/instagram.png';
-import { useNavigate, Link } from 'react-router-dom';
 
 function Header() {
 
@@ -30,7 +28,6 @@ function Header() {
     return (
         <header className='container-header'>
             <div>LOGO</div>
-
             <nav className='nav-header' >
                 <div
                     className='nav-header-options'
