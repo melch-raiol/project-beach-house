@@ -78,6 +78,12 @@
 
 .info-form > span {
   margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.info-form > span > a {
+  color: white;
+  /* text-decoration: none; */
 }
 
 .title-info {

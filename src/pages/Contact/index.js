@@ -73,7 +73,15 @@ function Contact() {
           <div className="info-form">
             <span className="title-info">Casas da Praia da Sepultura</span>
             <span>Rua Chincharro, 309 - Centro - Bombinhas / SC</span>
-            <span>whatsapp: +55 47 99755-1106</span>
+            <span>
+              whatsapp:
+              <a
+                target="_blank"
+                href="https://wa.me/5547997551106?text=Ol%C3%A1%21"
+              >
+                +55 47 99755-1106
+              </a>
+            </span>
             <span>casasdasepultura@gamil.com</span>
           </div>
 
