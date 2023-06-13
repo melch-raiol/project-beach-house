@@ -1,5 +1,5 @@
 .container-about-us {
-  height: 100%;
+  height: 100vh;
   width: 100vw;
 
   display: flex;
@@ -15,8 +15,8 @@
 }
 
 .text-about-us {
-  width: 50%;
-  height: 70%;
+  /* width: 90%; */
+  /* height: 100%; */
 
   display: flex;
   flex-direction: column;
@@ -35,28 +35,24 @@
   );
   backdrop-filter: blur(150px);
 
-  z-index: 1;
   border-radius: 20px;
   border: 2px solid white;
 }
 
-.text-about-us h2 {
+/* .text-about-us h2 {
   padding: 20px;
 }
 
 .text-about-us > p {
   padding: 20px;
-}
+} */
 
 @media (max-width: 768px) {
   .text-about-us {
-    width: 90%;
-    height: 90%;
+    /* width: 90%;
+    height: 90%; */
 
-    margin-top: 30px;
-    z-index: 1;
-  }
-
-  .text-about-us > p {
+    /* margin-top: 30px; */
+    /* z-index: 1; */
   }
 }
