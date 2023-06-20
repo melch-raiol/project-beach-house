@@ -81,7 +81,7 @@ label span:nth-child(3) {
   top: 15px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
   .nav-header {
     display: none;
   }
