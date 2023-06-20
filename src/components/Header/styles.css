@@ -1,53 +1,47 @@
 .container-header {
-  height: 80px;
-  width: 100%;
+  height: 153px;
+  width: 100vw;
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 
-  color: white;
-  background: linear-gradient(
-    132deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0)
-  );
-  backdrop-filter: blur(5px);
-  z-index: 10;
+  position: absolute;
+  top: 0;
+
+  background-color: #f1f1ef;
+}
+
+.logo {
+  width: 40%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-header {
-  height: 50px;
-  width: 700px;
+  height: 100%;
+  width: 50%;
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-
-  z-index: 1;
 }
 
-.nav-header-options {
-  height: 40px;
-  width: 120px;
+.nav-bar {
+  width: 100%;
 
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-
-  background-color: rgb(72, 72, 241);
-
-  border-radius: 20px;
-
-  cursor: pointer;
 }
 
-.nav-header-options:hover {
-  background-color: rgb(95, 95, 250);
-  border: 2px solid white;
+.nav-bar li {
+  list-style-type: none;
 }
 
 #checkbox-menu {
@@ -84,22 +78,6 @@ label span:nth-child(3) {
 @media (max-width: 425px) {
   .nav-header {
     display: none;
-  }
-
-  .nav-header-options {
-    height: 40px;
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    background-color: rgb(72, 72, 241);
-
-    border-radius: 20px;
-
-    cursor: pointer;
   }
 
   .menu-sandwich {

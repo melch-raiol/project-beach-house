@@ -48,6 +48,8 @@ function Header() {
 
   return (
     <header className="container-header">
+      <div className="logo">LOGO</div>
+
       <input
         type="checkbox"
         id="checkbox-menu"
@@ -58,26 +60,15 @@ function Header() {
         <span></span>
         <span></span>
       </label>
-      <div className="logo">LOGO</div>
+
       <nav className={activedMenu ? "menu-sandwich" : "nav-header"}>
-        <div className="nav-header-options" onClick={() => handleHome()}>
-          Home
-        </div>
-        <div className="nav-header-options" onClick={() => handleAboutUs()}>
-          Sobre Somos
-        </div>
-        <div className="nav-header-options" onClick={() => handleApartments()}>
-          Apartamentos
-        </div>
-        <div className="nav-header-options" onClick={() => handleContact()}>
-          Contato
-        </div>
+        <ul className="nav-bar">
+          <li>Home</li>
+          <li>About</li>
+          <li>Rooms</li>
+          <li>Contact</li>
+        </ul>
       </nav>
-      <div className="social-midia-icons">
-        <div className="nav-header-options" onClick={() => handleBook()}>
-          Reservas
-        </div>
-      </div>
     </header>
   );
 }
