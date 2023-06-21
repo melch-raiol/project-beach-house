@@ -1,30 +1,186 @@
-.container-main {
-  min-height: 100vh;
+.container {
+  height: 100vh;
   width: 100vw;
 
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-
-  /* position: relative; */
-
-  background-image: url("../../assets/sepul-houses-1.JPG");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
-.hero {
-  width: 90%;
-  height: 80%;
+.banner {
+  width: 100%;
+  height: 70%;
+  background-image: url('../../assets/sepul-houses-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner strong {
+  width: 632px;
+  position: relative;
+  top: 450px;
+  left: 50px;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+
+  color: white;
+}
+
+
+.text {
+  width: 100%;
+  height: 30%;
+  background-color: #E9EAD8;
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  border: 2px solid white;
 }
+
+.text p {
+  width: 790px;
+  height: 127px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #1D3D34;
+}
+
+.text span {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 13px;
+
+  color: #1D3D34;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 50%;
+}
+
+.heroinfo,
+.heroinfo-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+}
+
+.heroinfo strong {
+  position: relative;
+  top: -150px;
+  left: -100px;
+  width: 498px;
+  height: 180px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 65px;
+
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.heroinfo p,
+.heroinfo-right p {
+  position: relative;
+  top: 80px;
+  width: 252px;
+  height: 156px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.infoimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30%;
+  height: 100%;
+}
+
+.infoimg img {
+  width: 100%;
+  height: 50%;
+}
+
+.heroinfo-right strong {
+  position: relative;
+  top: -150px;
+  right: 10px;
+  width: 498px;
+  height: 180px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 65px;
+
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* .instagram-photos {
   height: 400px;
@@ -33,7 +189,7 @@
   border: 2px solid white;
 } */
 
-.address-main {
+/* .textinfo .address-main {
   height: 500px;
   width: 50%;
 
@@ -53,4 +209,4 @@
 .address-main iframe {
   height: clamp(100px, 60%, 500px);
   width: clamp(200px, 50%, 500px);
-}
+} */

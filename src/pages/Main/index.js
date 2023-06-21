@@ -1,59 +1,47 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import Whatsapp from "../../components/Whatsapp";
+import imageinfo from '../../assets/apartments.jpg'
 import "./styles.css";
 
 function Main() {
   return (
     <>
       <Header />
-      <main className="container-main">
-        <section className="hero">
-          <div className="instagram-photos"></div>
-
-          <div className="address-main">
-            <span>Localização</span>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.481791697999!2d-48.48031578528738!3d-27.141127509305598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a3f549ef85f7%3A0x86aca3a30383c6d1!2sCasas%20da%20Sepultura!5e0!3m2!1ses-419!2sbr!4v1680449990692!5m2!1ses-419!2sbr"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+      <main>
+        <section className="container">
+          <div className="banner">
+            <strong>Make Memories to Last a Lifetime at Hidden Resort
+              Copy
+            </strong>
+          </div>
+          <div className="text">
+            <span>Heaven</span>
+            <p>At Hidden Resort, we offer a variety of accommodations to suit every
+              need and budget. From cozy cabins to spacious villas, each of our
+              accommodations is designed to provide the perfect blend of comfort and
+              luxury, with stunning views of the surrounding landscapes.</p>
           </div>
         </section>
-        <Whatsapp />
-      </main>
-      <main className="container-main">
-        <section className="hero">
-          <div className="instagram-photos"></div>
-
-          <div className="address-main">
-            <span>Localização</span>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.481791697999!2d-48.48031578528738!3d-27.141127509305598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a3f549ef85f7%3A0x86aca3a30383c6d1!2sCasas%20da%20Sepultura!5e0!3m2!1ses-419!2sbr!4v1680449990692!5m2!1ses-419!2sbr"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+        <section className="container">
+          <div className="hero">
+            <div className="heroinfo">
+              <strong>Your Perfect Heaven for Rejuvenation and Relaxation Copy</strong>
+              <p>As you enter our resort, youll feel yourself enveloped in a sense of peace and tranquility, as the stresses of the outside world melt away. Our accommodations are designed to provide the perfect blend of comfort and luxury.</p>
+            </div>
+            <div className="infoimg">
+              <img src={imageinfo} alt="imagem info" />
+            </div>
+          </div>
+          <div className="hero">
+            <div className="infoimg">
+              <img src={imageinfo} alt="imagem info" />
+            </div>
+            <div className="heroinfo-right">
+              <p>As you enter our resort, youll feel yourself enveloped in a sense of peace and tranquility, as the stresses of the outside world melt away. Our accommodations are designed to provide the perfect blend of comfort and luxury.</p>
+              <strong>Your Perfect Heaven for Rejuvenation and Relaxation Copy</strong>
+            </div>
           </div>
         </section>
-        <Whatsapp />
-      </main>
-      <main className="container-main">
-        <section className="hero">
-          <div className="instagram-photos"></div>
-
-          <div className="address-main">
-            <span>Localização</span>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.481791697999!2d-48.48031578528738!3d-27.141127509305598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a3f549ef85f7%3A0x86aca3a30383c6d1!2sCasas%20da%20Sepultura!5e0!3m2!1ses-419!2sbr!4v1680449990692!5m2!1ses-419!2sbr"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </section>
-        <Whatsapp />
       </main>
       <Footer />
     </>
