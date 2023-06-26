@@ -1,16 +1,13 @@
 .container-header {
-  height: 153px;
   width: 100vw;
+  height: 100px;
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-
-  position: absolute;
-  top: 0;
-
-  background-color: #f1f1ef;
+  background-color: #58a1d94b;
+  color: white;
 }
 
 .logo {
@@ -41,14 +38,14 @@
 }
 
 .nav-bar li {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 22px;
   list-style-type: none;
   text-transform: uppercase;
-  color: #1D3D34;
+  color: white;
 }
 
 #checkbox-menu {
@@ -68,16 +65,16 @@ label span:nth-child(3) {
   top: 30px;
 }
 
-#checkbox-menu:checked+label span:nth-child(1) {
+#checkbox-menu:checked + label span:nth-child(1) {
   transform: rotate(-45deg);
   top: 15px;
 }
 
-#checkbox-menu:checked+label span:nth-child(2) {
+#checkbox-menu:checked + label span:nth-child(2) {
   opacity: 0;
 }
 
-#checkbox-menu:checked+label span:nth-child(3) {
+#checkbox-menu:checked + label span:nth-child(3) {
   transform: rotate(45deg);
   top: 15px;
 }
