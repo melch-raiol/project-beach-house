@@ -1,22 +1,20 @@
 .container-footer {
-  height: 150px;
-  width: 100%;
+  width: 100vw;
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 
-  bottom: 0;
-
   padding: 30px 100px;
   color: black;
-  background: linear-gradient(
+  background-color: green;
+  /* background: linear-gradient(
     132deg,
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0)
   );
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px); */
 }
 
 .address-footer {
