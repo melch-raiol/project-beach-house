@@ -1,0 +1,38 @@
+.localizacao {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  widows: 50vw;
+}
+
+.image-localization {
+  height: 600px;
+  width: 500px;
+
+  border: 1px solid black;
+}
+
+.info-localization {
+  height: clamp(100px, 90%, 500px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid black;
+}
+
+.info-localization > a {
+  height: 100px;
+  width: 100%;
+}
+
+.info-localization > iframe {
+  height: 80%;
+  width: 100%;
+}

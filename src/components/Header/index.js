@@ -26,25 +26,25 @@ function Header() {
     };
   }, []);
 
-  function handleHome() {
-    navigate("/");
-  }
+  // function handleHome() {
+  //   navigate("/");
+  // }
 
-  function handleAboutUs() {
-    navigate("/AboutUs");
-  }
+  // function handleAboutUs() {
+  //   navigate("/AboutUs");
+  // }
 
-  function handleContact() {
-    navigate("/Contact");
-  }
+  // function handleContact() {
+  //   navigate("/Contact");
+  // }
 
-  function handleBook() {
-    navigate("/Book");
-  }
+  // function handleBook() {
+  //   navigate("/Book");
+  // }
 
-  function handleApartments() {
-    navigate("/Apartments");
-  }
+  // function handleApartments() {
+  //   navigate("/Apartments");
+  // }
 
   return (
     <header className="container-header">
@@ -63,10 +63,21 @@ function Header() {
 
       <nav className={activedMenu ? "menu-sandwich" : "nav-header"}>
         <ul className="nav-bar">
-          <li>Home</li>
-          <li>About</li>
-          <li>Rooms</li>
-          <li>Contact</li>
+          <li>
+            <a href="#section-1">Home</a>
+          </li>
+          <li>
+            <a href="#section-2">About</a>
+          </li>
+          <li>
+            <a href="#section-3">Apartaments</a>
+          </li>
+          <li>
+            <a href="#section-4">Localization</a>
+          </li>
+          <li>
+            <a href="#section-5">Contacts</a>
+          </li>
         </ul>
       </nav>
     </header>
