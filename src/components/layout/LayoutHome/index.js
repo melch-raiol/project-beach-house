@@ -2,7 +2,7 @@ import "./style.css";
 
 export default function LayoutHome() {
   return (
-    <div className="container">
+    <div className="container" >
       <div className="banner">
         <strong className="banner-text">
           Make Memories to Last a Lifetime at Hidden Resort Copy
