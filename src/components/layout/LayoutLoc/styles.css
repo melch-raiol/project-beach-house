@@ -9,15 +9,9 @@
   widows: 50vw;
 }
 
-.image-localization {
-  height: 600px;
-  width: 500px;
-
-  border: 1px solid black;
-}
-
 .info-localization {
-  height: clamp(100px, 90%, 500px);
+  height: 50vh;
+  width: 40vw;
 
   display: flex;
   flex-direction: column;
@@ -35,4 +29,10 @@
 .info-localization > iframe {
   height: 80%;
   width: 100%;
+}
+
+.image-localization {
+  height: 50vh;
+  width: 40vw;
+  border: 1px solid black;
 }

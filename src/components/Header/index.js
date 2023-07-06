@@ -1,9 +1,7 @@
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 import "./styles.css";
-import { useState, useEffect } from "react";
 
 function Header() {
-  const navigate = useNavigate();
   const [activedMenu, setActivedMenu] = useState(true);
 
   function handleActivedMenu() {
@@ -25,26 +23,6 @@ function Header() {
       window.removeEventListener("resize", verifyWindowWidth);
     };
   }, []);
-
-  // function handleHome() {
-  //   navigate("/");
-  // }
-
-  // function handleAboutUs() {
-  //   navigate("/AboutUs");
-  // }
-
-  // function handleContact() {
-  //   navigate("/Contact");
-  // }
-
-  // function handleBook() {
-  //   navigate("/Book");
-  // }
-
-  // function handleApartments() {
-  //   navigate("/Apartments");
-  // }
 
   return (
     <header className="container-header">
