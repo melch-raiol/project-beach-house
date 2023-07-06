@@ -4,7 +4,7 @@ import imageInfo02 from "../../../databases/ap_04_rooms_img_01.jpg";
 
 export default function LayoutInfo() {
   return (
-    <div className="container">
+    <div className="container" id="section-2">
       <div className="container-info">
         <div className="text-info">
           <strong>Your Perfect Heaven for Rejuvenation and Relaxation</strong>

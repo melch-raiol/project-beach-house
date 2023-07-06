@@ -1,9 +1,7 @@
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 import "./styles.css";
-import { useState, useEffect } from "react";
 
 function Header() {
-  const navigate = useNavigate();
   const [activedMenu, setActivedMenu] = useState(true);
 
   function handleActivedMenu() {
@@ -26,26 +24,6 @@ function Header() {
     };
   }, []);
 
-  function handleHome() {
-    navigate("/");
-  }
-
-  function handleAboutUs() {
-    navigate("/AboutUs");
-  }
-
-  function handleContact() {
-    navigate("/Contact");
-  }
-
-  function handleBook() {
-    navigate("/Book");
-  }
-
-  function handleApartments() {
-    navigate("/Apartments");
-  }
-
   return (
     <header className="container-header">
       <div className="logo">LOGO</div>
@@ -63,10 +41,21 @@ function Header() {
 
       <nav className={activedMenu ? "menu-sandwich" : "nav-header"}>
         <ul className="nav-bar">
-          <li>Home</li>
-          <li>About</li>
-          <li>Rooms</li>
-          <li>Contact</li>
+          <li>
+            <a href="#section-1">Home</a>
+          </li>
+          <li>
+            <a href="#section-2">About</a>
+          </li>
+          <li>
+            <a href="#section-3">Apartaments</a>
+          </li>
+          <li>
+            <a href="#section-4">Localization</a>
+          </li>
+          <li>
+            <a href="#section-5">Contacts</a>
+          </li>
         </ul>
       </nav>
     </header>
