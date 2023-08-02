@@ -47,11 +47,18 @@
 }
 
 .loc-map {
-  width: 50%;
-  height: 100%;
+  height: 600px;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  border: 1px solid gray;
+}
+
+.mapa {
+  height: 90%;
+  width: 90%;
 }
 
 .info-loc {
@@ -61,7 +68,7 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  background-color: blue;
+  background-color: #04c45c;
 }
 
 .title-loc {
@@ -71,14 +78,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: purple;
+  background-color: #04c45c;
 }
 
-.title-loc>strong {
+.title-loc > strong {
   width: 100%;
   padding: 25px;
   text-align: left;
-  color: #FFF;
+  color: #fff;
   font-family: Inter;
   font-size: 35px;
   font-weight: 400;
@@ -92,22 +99,32 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: red;
+  background-color: #04c45c;
 }
 
-.text-loc>span,
-.text-loc>p {
+.text-loc > span,
+.text-loc > p {
   width: 100%;
   padding: 25px;
   text-align: left;
-  color: #FFF;
+  color: #fff;
   font-family: Inter;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
 }
 
-.mapa {
-  width: 70%;
-  height: 900px;
+@media (max-width: 800px) {
+  .container-row {
+    height: 500px;
+    width: 100vw;
+  }
+
+  .loc-map {
+    height: 300px;
+  }
+
+  .info-loc {
+    display: none;
+  }
 }

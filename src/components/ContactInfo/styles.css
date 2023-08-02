@@ -1,0 +1,28 @@
+.container-contact-info {
+  height: 98%;
+  width: clamp(300px, 90%, 700px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* border: 1px solid blue; */
+}
+
+.div-info {
+  height: 60%;
+  width: clamp(300px, 90%, 700px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  /* border: 1px solid blue; */
+}
+
+@media (max-width: 800px) {
+  .container-contact-info {
+    display: none;
+  }
+}

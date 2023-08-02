@@ -1,0 +1,38 @@
+.container-form {
+  height: 90%;
+  width: clamp(300px, 90%, 1500px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  /* border: 1px solid grey; */
+}
+
+.form {
+  height: 98%;
+  width: clamp(300px, 90%, 700px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  /* border: 1px solid blue; */
+}
+
+.input-contact {
+  height: clamp(5px, 90%, 60px);
+  width: clamp(250px, 90%, 500px);
+}
+
+.message {
+  height: clamp(20px, 90%, 150px);
+}
+
+.button-send {
+  font-size: 1.5em;
+  color: #fff;
+  background-color: rgb(33, 47, 248);
+  cursor: pointer;
+}

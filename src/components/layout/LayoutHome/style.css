@@ -77,3 +77,15 @@
   align-items: center;
   text-align: center;
 }
+
+@media (max-width: 800px) {
+  .banner {
+    height: 40vh;
+    width: 100vw;
+  }
+
+  .info-text p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
