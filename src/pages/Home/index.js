@@ -5,6 +5,7 @@ import LayoutContact from "../../components/layout/LayoutContact";
 import LayoutHome from "../../components/layout/LayoutHome";
 import LayoutInfo from "../../components/layout/LayoutInfo";
 import LayoutLoc from "../../components/layout/LayoutLoc";
+import Whatsapp from "../../components/Whatsapp";
 import "./style.css";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <LayoutLoc />
       <LayoutContact />
       <Footer />
+      <Whatsapp />
     </div>
   );
 }

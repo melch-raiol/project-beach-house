@@ -21,6 +21,21 @@
   /* border: 1px solid blue; */
 }
 
+.div-info > h1,
+h2,
+span {
+  font-weight: 100;
+  font-family: "lobster";
+}
+
+.div-info > h1 {
+  font-size: 2.8em;
+}
+
+.div-info > span {
+  font-size: 1.5em;
+}
+
 @media (max-width: 800px) {
   .container-contact-info {
     display: none;

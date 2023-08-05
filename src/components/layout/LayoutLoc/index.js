@@ -3,6 +3,7 @@ import "./styles.css";
 export default function LayoutLoc() {
   return (
     <div className="container-row" id="section-4">
+      <span className="span-loc">Localização</span>
       <div className="loc-map">
         <iframe
           className="mapa"
@@ -14,9 +15,7 @@ export default function LayoutLoc() {
       </div>
       <div className="info-loc">
         <div className="title-loc">
-          <strong>
-            O Apartamento mais bem localizado para sua viagem
-          </strong>
+          <strong>O Apartamento mais bem localizado para sua viagem</strong>
         </div>
 
         <div className="text-loc">

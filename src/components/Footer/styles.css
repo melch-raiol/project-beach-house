@@ -1,36 +1,32 @@
 .container-footer {
+  height: 30vh;
   width: 100vw;
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  background-color: rgb(33, 47, 248);
+  border: 1px solid grey;
+}
 
-  padding: 30px 100px;
-  color: black;
-  background-color: green;
-  /* background: linear-gradient(
-    132deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0)
-  );
-  backdrop-filter: blur(2px); */
+.div-footer {
+  height: 70%;
+  display: flex;
+
+  border: 1px solid grey;
 }
 
 .address-footer {
-  /* width: 25vw;
-  height: 15vh; */
+  height: 100%;
+  width: 50%;
 
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 
   color: white;
-
   font-size: 18px;
-
   box-shadow: 20px;
+
+  border: 1px solid grey;
 }
 
 .address-footer > span {
@@ -38,11 +34,14 @@
 }
 
 .social-midia-icons {
-  width: 100px;
+  height: 100%;
+  width: 50%;
 
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+
+  border: 1px solid grey;
 }
 
 .social-midia-icons img {
@@ -56,4 +55,16 @@
 
 .social-midia-icons-instagram {
   cursor: pointer;
+}
+
+.startup {
+  height: 30%;
+  width: 100vw;
+  border: 1px solid grey;
+}
+
+@media (max-width: 800px) {
+  .address-footer {
+    display: flex;
+  }
 }

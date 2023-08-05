@@ -3,7 +3,6 @@ import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./styles.css";
-import ContactInfo from "../ContactInfo";
 
 export default function Form() {
   const [name, setName] = useState("");
@@ -57,9 +56,8 @@ export default function Form() {
   return (
     <div className="container-form">
       <ToastContainer />
-      <ContactInfo />
       <form onSubmit={handleEmail} className="form">
-        <h2>Fale com a gente</h2>
+        <h1 className="tolk-to-us">Fale com a gente</h1>
         <input
           className="input-contact"
           type="name"
