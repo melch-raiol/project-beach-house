@@ -94,10 +94,6 @@
     flex-direction: column;
   }
 
-  .span-loc {
-    font-size: 30px;
-  }
-
   .div-map {
     gap: 5%;
   }

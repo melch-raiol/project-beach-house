@@ -4,7 +4,7 @@ export default function LayoutLoc() {
   return (
     <div className="container-row" id="section-4">
       <div className="div-map">
-        <span className="span-loc">Localização</span>
+        <span className="section-title">Localização</span>
         <div className="loc-map">
           <iframe
             className="mapa"
@@ -17,7 +17,7 @@ export default function LayoutLoc() {
       </div>
       <div className="info-loc">
         <strong>
-          O Apartamento pé na araia, localizados no centro de Bombinhas.
+          O Apartamento pé na araia localizados no centro de Bombinhas.
         </strong>
       </div>
     </div>

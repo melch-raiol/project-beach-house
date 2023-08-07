@@ -1,6 +1,9 @@
 .container-apartaments {
-  border: 1px solid gray;
   background-color: #58a1d94b;
+}
+
+.images-of-houses-text {
+  margin: 2%;
 }
 
 .fotos-dos-apartamentos {
@@ -10,5 +13,9 @@
 @media (max-width: 800px) {
   .fotos-dos-apartamentos {
     height: 500px;
+  }
+
+  .images-of-houses-text {
+    margin-top: 5%;
   }
 }

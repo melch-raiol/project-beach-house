@@ -53,6 +53,10 @@
   text-decoration: none;
 }
 
+.menu-sandwich {
+  width: 50%;
+}
+
 #checkbox-menu {
   position: absolute;
   opacity: 0;
