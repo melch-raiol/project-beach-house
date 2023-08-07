@@ -3,14 +3,22 @@
   width: clamp(300px, 90%, 800px);
 
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 
   /* border: 1px solid grey; */
 }
 
+.tolk-to-us {
+  font-family: "lobster";
+  font-size: 3em;
+  font-weight: 100;
+  margin-bottom: 10%;
+}
+
 .form {
-  height: 98%;
+  height: 60%;
   width: clamp(300px, 90%, 700px);
 
   display: flex;
@@ -18,13 +26,8 @@
   align-items: center;
   justify-content: space-around;
 
+  gap: 10px;
   /* border: 1px solid blue; */
-}
-
-.tolk-to-us {
-  font-family: "lobster";
-  font-size: 3em;
-  font-weight: 100;
 }
 
 .input-contact {
@@ -58,6 +61,15 @@ textarea::placeholder {
 }
 
 @media (max-width: 800px) {
+  .container-form {
+    height: 95%;
+    width: clamp(400px, 95%, 800px);
+  }
+
+  .form {
+    height: 100%;
+  }
+
   .tolk-to-us {
     font-size: 2em;
   }

@@ -56,8 +56,8 @@ export default function Form() {
   return (
     <div className="container-form">
       <ToastContainer />
+      <h1 className="tolk-to-us">Fale com a gente</h1>
       <form onSubmit={handleEmail} className="form">
-        <h1 className="tolk-to-us">Fale com a gente</h1>
         <input
           className="input-contact"
           type="name"
