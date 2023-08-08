@@ -1,12 +1,12 @@
 .slide-img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   border: 1px solid gray;
 }
 
 .carrocel-img {
-  height: 900px;
-  width: 900px;
+  height: 50vh;
+  width: 50vw;
 }
 
 .container-img {
@@ -45,11 +45,20 @@
     height: 50vh;
     width: 100%;
 
-    margin-top: 5%;
+    /* margin-top: 5%; */
   }
 
   .descicao-imagem {
     height: 20%;
     width: 100%;
+  }
+
+  .carrocel-img {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .descicao-imagem {
+    margin-bottom: 11%;
   }
 }

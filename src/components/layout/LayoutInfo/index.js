@@ -7,12 +7,15 @@ export default function LayoutInfo() {
     <div className="container" id="section-2">
       <div className="container-info">
         <div className="text-info">
-          <strong>Your Perfect Heaven for Rejuvenation and Relaxation</strong>
+          <strong>
+            A Praia da Sepultura é um verdadeiro paraíso para os amantes da
+            natureza e da tranquilidade.
+          </strong>
           <p>
-            As you enter our resort, you'll feel yourself enveloped in a sense
-            of peace and tranquility, as the stresses of the outside world melt
-            away. Our accommodations are designed to provide the perfect blend
-            of comfort and luxury.
+            Com suas águas cristalinas e repletas de peixinhos coloridos, o
+            lugar é um convite ao mergulho e à exploração marinha. Além disso, a
+            presença de tartarugas marinhas traz um toque especial de encanto ao
+            ambiente.
           </p>
         </div>
         <div className="info-img">
@@ -24,12 +27,15 @@ export default function LayoutInfo() {
           <img src={imageInfo02} alt="info imagem esquerda" />
         </div>
         <div className="text-info">
-          <strong>Your Perfect Heaven for Rejuvenation and Relaxation</strong>
+          <strong>
+            A praia conta ainda com uma trilha deslumbrante que leva a uma vista
+            panorâmica belíssima do oceano.
+          </strong>
           <p>
-            As you enter our resort, you'll feel yourself enveloped in a sense
-            of peace and tranquility, as the stresses of the outside world melt
-            away. Our accommodations are designed to provide the perfect blend
-            of comfort and luxury.
+            É um espetáculo para os olhos e para a alma, uma oportunidade de
+            conexão com a natureza em seu estado mais puro. Não perca a chance
+            de conhecer esse refúgio paradisíaco localizado na cidade de
+            Bombinhas, Santa Catarina.
           </p>
         </div>
       </div>
