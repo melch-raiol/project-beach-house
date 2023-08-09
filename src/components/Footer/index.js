@@ -1,5 +1,5 @@
-import ImgFacebook from "../../assets/facebook_733547.png";
-import ImgInstagram from "../../assets/instagram_1409946.png";
+import ImgFacebook from "../../assets/facebook.png";
+import ImgInstagram from "../../assets/instagram.png";
 import WhatsappFooter from "../../assets/whatsapp-icon.png";
 import "./styles.css";
 
