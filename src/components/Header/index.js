@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Logo from "../../assets/logo-blue.jpeg";
 import "./styles.css";
 
 function Header() {
@@ -26,7 +27,7 @@ function Header() {
 
   return (
     <header className="container-header">
-      <div className="logo">LOGO</div>
+      <img className="logo" src={Logo} />
 
       <input
         type="checkbox"
