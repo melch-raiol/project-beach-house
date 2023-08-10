@@ -4,9 +4,15 @@ import "./styles.css";
 
 function Header() {
   const [activedMenu, setActivedMenu] = useState(true);
+  const [checkbox, setCheckbox] = useState(true);
 
   function handleActivedMenu() {
     setActivedMenu(!activedMenu);
+    setCheckbox(!checkbox);
+  }
+
+  function handleCheckbox() {
+    setCheckbox(!checkbox);
   }
 
   useEffect(() => {
@@ -30,7 +36,8 @@ function Header() {
       <img className="logo" src={Logo} />
 
       <input
-        type="checkbox"
+        // type="checkbox"
+        type={checkbox ? "checkbox" : ""}
         id="checkbox-menu"
         onClick={() => handleActivedMenu()}
       />
@@ -42,21 +49,21 @@ function Header() {
 
       <nav className={activedMenu ? "menu-sandwich" : "nav-header"}>
         <ul className="nav-bar">
-          <li onClick={() => handleActivedMenu()}>
-            <a href="#section-1">Home</a>
-          </li>
-          <li onClick={() => handleActivedMenu()}>
-            <a href="#section-2">About</a>
-          </li>
-          <li onClick={() => handleActivedMenu()}>
-            <a href="#section-3">Apartaments</a>
-          </li>
-          <li onClick={() => handleActivedMenu()}>
-            <a href="#section-4">Localization</a>
-          </li>
-          <li onClick={() => handleActivedMenu()}>
-            <a href="#section-5">Contacts</a>
-          </li>
+          <a href="#section-1">
+            <li onClick={() => handleActivedMenu()}>Home</li>
+          </a>
+          <a href="#section-2">
+            <li onClick={() => handleActivedMenu()}>About</li>
+          </a>
+          <a href="#section-3">
+            <li onClick={() => handleActivedMenu()}>Apartaments</li>
+          </a>
+          <a href="#section-4">
+            <li onClick={() => handleActivedMenu()}>Localization</li>
+          </a>
+          <a href="#section-5">
+            <li onClick={() => handleActivedMenu()}>Contacts</li>
+          </a>
         </ul>
       </nav>
     </header>

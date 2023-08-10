@@ -21,13 +21,14 @@
   font-size: 18px;
 }
 
-.descicao-imagem {
+.image-description {
   width: 98%;
   height: 150px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 7%;
   position: absolute;
   bottom: 0px;
   background: linear-gradient(
@@ -36,8 +37,23 @@
     rgba(255, 255, 255, 0)
   );
   backdrop-filter: blur(5px);
+}
 
-  border-radius: 25px;
+.btn-more-photos {
+  height: 30%;
+  width: 40%;
+  border-radius: 10px;
+  background-color: rgb(33, 47, 248);
+  border: 3px solid rgb(175, 188, 250);
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-more-photos:hover {
+  border: 3px solid rgb(50, 64, 250);
+  background-color: rgb(50, 64, 250);
+  font-size: 1.6em;
 }
 
 @media (max-width: 800px) {
@@ -46,9 +62,11 @@
     width: 100%;
   }
 
-  .descicao-imagem {
+  .image-description {
     height: 20%;
     width: 100%;
+    margin-bottom: 11%;
+    border: 1px solid red;
   }
 
   .carrocel-img {
@@ -56,7 +74,8 @@
     width: 100vw;
   }
 
-  .descicao-imagem {
-    margin-bottom: 11%;
+  .btn-more-photos {
+    height: 40%;
+    width: 40%;
   }
 }

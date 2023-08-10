@@ -1,6 +1,6 @@
 .container-header {
+  height: 80px;
   width: 100vw;
-  height: 100px;
 
   display: flex;
   flex-direction: row;
@@ -24,7 +24,6 @@
   width: 50%;
 
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
@@ -38,7 +37,7 @@
   align-items: center;
 }
 
-.nav-bar li {
+.nav-bar a {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
@@ -46,10 +45,14 @@
   line-height: 22px;
   list-style-type: none;
   text-transform: uppercase;
+  color: rgb(101, 101, 255);
+}
+
+.nav-bar a:hover {
   color: white;
 }
 
-.nav-bar li a {
+.nav-bar a {
   text-decoration: none;
 }
 
@@ -109,7 +112,7 @@ label span:nth-child(3) {
 
     position: absolute;
 
-    margin-top: 300px;
+    margin-top: 280px;
 
     z-index: 2;
     background-color: white;
@@ -137,7 +140,8 @@ label span:nth-child(3) {
     transition: 0.25s ease-in-out;
   }
 
-  .nav-bar li {
+  .nav-bar a {
+    /* height: ; */
     width: 95%;
     line-height: 31px;
     display: flex;
