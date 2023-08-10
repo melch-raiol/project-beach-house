@@ -15,14 +15,22 @@ export default function Carrocel() {
   const navigate = useNavigate();
 
   const slides = [
-    { imagem: imagem01, descricao: "texto imagem 01" },
-    { imagem: imagem02, descricao: "texto imagem 02" },
-    { imagem: imagem03, descricao: "texto imagem 03" },
-    { imagem: imagem04, descricao: "texto imagem 04" },
+    {
+      imagem: imagem01,
+      name: "4 Quartos com Quintal",
+      route: "quatro_quartos_quintal",
+    },
+    { imagem: imagem02, name: "3 Quartos", route: "tres_quartos" },
+    { imagem: imagem03, name: "Studio", route: "studio" },
+    {
+      imagem: imagem04,
+      name: "4 Quartos com Deck",
+      route: "quatro_quartos_deck",
+    },
   ];
 
-  function navagation() {
-    navigate("/fotos");
+  function navagation(route) {
+    navigate(`/${route}`);
   }
 
   return (
@@ -33,10 +41,10 @@ export default function Carrocel() {
             <div className="container-img">
               <img className="slide-img" src={slide.imagem} alt="apartamento" />
               <div className="image-description">
-                <strong className="texto-imagem">{slide.descricao}</strong>
+                <strong className="texto-imagem">{slide.name}</strong>
                 <button
                   className="btn-more-photos"
-                  onClick={() => navagation()}
+                  onClick={() => navagation(slide.route)}
                 >
                   Mais Fotos
                 </button>

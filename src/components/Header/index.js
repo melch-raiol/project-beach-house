@@ -55,7 +55,7 @@ function Header() {
           <a href="#section-2">
             <li onClick={() => handleActivedMenu()}>About</li>
           </a>
-          <a href="#section-3">
+          <a href="#apartamentos">
             <li onClick={() => handleActivedMenu()}>Apartaments</li>
           </a>
           <a href="#section-4">
