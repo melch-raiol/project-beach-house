@@ -3,7 +3,7 @@ import "./styles.css";
 
 export default function Whatsapp() {
   return (
-    <>
+    <div className="container-whatsapp">
       <a
         className="logo-whatsapp"
         target="_blank"
@@ -11,6 +11,6 @@ export default function Whatsapp() {
       >
         <img className="img-whatsapp" src={ImgWhatsapp} />
       </a>
-    </>
+    </div>
   );
 }

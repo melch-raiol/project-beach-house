@@ -2,16 +2,12 @@ import { useEffect, useState } from "react";
 import Logo from "../../assets/logo-blue.jpeg";
 import "./styles.css";
 
-function Header() {
+export default function Header() {
   const [activedMenu, setActivedMenu] = useState(true);
   const [checkbox, setCheckbox] = useState(true);
 
   function handleActivedMenu() {
     setActivedMenu(!activedMenu);
-    setCheckbox(!checkbox);
-  }
-
-  function handleCheckbox() {
     setCheckbox(!checkbox);
   }
 
@@ -69,5 +65,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;

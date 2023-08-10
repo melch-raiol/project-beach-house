@@ -1,7 +1,5 @@
 .slide-img {
   width: 100%;
-  /* height: 100%; */
-  /* border: 1px solid gray; */
 }
 
 .carrocel-img {
@@ -66,7 +64,7 @@
     height: 20%;
     width: 100%;
     margin-bottom: 11%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .carrocel-img {
@@ -77,5 +75,6 @@
   .btn-more-photos {
     height: 40%;
     width: 40%;
+    font-size: 0.9em;
   }
 }
