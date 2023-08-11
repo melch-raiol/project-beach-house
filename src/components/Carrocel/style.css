@@ -1,10 +1,12 @@
 .slide-img {
   width: 100%;
+  border-radius: 20px;
 }
 
 .carrocel-img {
   height: 50vh;
   width: 50vw;
+  border-radius: 20px;
 }
 
 .container-img {
@@ -12,6 +14,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
+  border: 2px solid rgb(33, 47, 248);
 }
 
 .texto-imagem {
@@ -20,7 +24,7 @@
 }
 
 .image-description {
-  width: 98%;
+  width: 99%;
   height: 150px;
   display: flex;
   flex-direction: column;
@@ -28,13 +32,14 @@
   justify-content: center;
   gap: 7%;
   position: absolute;
-  bottom: 0px;
+  bottom: 2px;
   background: linear-gradient(
     132deg,
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0)
   );
   backdrop-filter: blur(5px);
+  border-radius: 20px;
 }
 
 .btn-more-photos {

@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -9,7 +10,6 @@ import imagem02 from "../../assets/Imags/img-02.jpg";
 import imagem03 from "../../assets/Imags/img-03.jpg";
 import imagem04 from "../../assets/Imags/img-04.jpg";
 import "./style.css";
-import { useNavigate } from "react-router-dom";
 
 export default function Carrocel() {
   const navigate = useNavigate();

@@ -30,9 +30,10 @@
   align-items: center;
 }
 
-.mapa {
+.map {
   height: 90%;
   width: 90%;
+  border-radius: 15px;
 }
 
 .info-loc {
@@ -43,6 +44,7 @@
   align-items: center;
   flex-direction: column;
   background-color: #04c45c;
+  border-radius: 15px 0px 0px 15px;
 }
 
 .title-loc {
