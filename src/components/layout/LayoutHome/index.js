@@ -10,7 +10,7 @@ export default function LayoutHome() {
         </strong>
       </div>
       <div className="info-text">
-        <strong>Heaven</strong>
+        <strong>Paraíso</strong>
         <p>
           Se você busca um local seguro para aproveitar em família, a Praia da
           Sepultura é ideal. Sua forma natural cria uma espécie de piscina,

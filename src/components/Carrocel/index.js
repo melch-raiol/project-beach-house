@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Navigation, Pagination } from "swiper";
+// import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -10,6 +10,7 @@ import imagem02 from "../../assets/Imags/img-02.jpg";
 import imagem03 from "../../assets/Imags/img-03.jpg";
 import imagem04 from "../../assets/Imags/img-04.jpg";
 import "./style.css";
+import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 
 export default function Carrocel() {
   const navigate = useNavigate();
@@ -35,7 +36,7 @@ export default function Carrocel() {
 
   return (
     <div className="carrocel-img">
-      <Swiper modules={[Navigation, Pagination]} navigation pagination>
+      <Swiper modules={[FreeMode, Navigation, Thumbs]} navigation pagination>
         {slides.map((slide) => (
           <SwiperSlide>
             <div className="container-img">
