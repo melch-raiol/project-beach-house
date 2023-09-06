@@ -38,6 +38,11 @@ code {
   font-weight: 100;
 }
 
+.btn-reservas {
+  height: 5vh;
+  width: 10vw;
+}
+
 @media (max-width: 800px) {
   .section-title {
     font-size: 2em;
