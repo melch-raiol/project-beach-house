@@ -8,6 +8,7 @@ import Footer from "../../components/Footer";
 import HeaderApartaments from "../../components/HeaderApartaments";
 import SliderApartaments from "../../components/SliderApartaments";
 import "./styles.css";
+import apartments from "../../databases/databases";
 
 export default function Studio() {
   return (
@@ -31,7 +32,16 @@ export default function Studio() {
             </div>
           </div>
           <div className="descriptions-ap-details">
-            Descrição do apartamento
+            <h1>Apartamento {apartments[3].name}</h1>
+            <h1>Quartos: {apartments[3].info[0].rooms}</h1>
+            <h1>wifi: {apartments[3].info[0].wiFi}</h1>
+            <h1>sala: {apartments[3].info[0].livingRoom}</h1>
+            <h1>Banheiro: {apartments[3].info[0].bathroom}</h1>
+            <h1>Área privada: {apartments[3].info[0].privateArea}</h1>
+            <h1>Cozinha: {apartments[3].info[0].kitchen}</h1>
+            <h1>
+              Quantidade de pessoas: {apartments[3].info[0].quantityOfPeaple}
+            </h1>
           </div>
         </div>
       </main>

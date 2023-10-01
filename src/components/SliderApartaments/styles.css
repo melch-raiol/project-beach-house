@@ -6,15 +6,18 @@
 }
 
 .apartaments {
-  height: 70vh;
-  width: 60vw;
+  height: 50%;
+  width: 100%;
 
   border: 1px solid gray;
 }
 
 .div-photos {
-  height: 20vh;
-  width: 60vw;
+  height: 20%;
+  width: 100%;
 
   border: 1px solid red;
+}
+
+@media (max-width: 800px) {
 }
