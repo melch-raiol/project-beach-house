@@ -33,7 +33,6 @@ export default function SliderApartaments({
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="div-photos"></div>
     </div>
   );
 }

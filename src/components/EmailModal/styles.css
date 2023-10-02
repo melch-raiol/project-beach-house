@@ -1,0 +1,19 @@
+.container-email-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(61, 61, 61, 0.48);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.form-modal {
+  height: 80%;
+  width: 60%;
+  background-color: rgb(108, 179, 241);
+  border: 2px solid black;
+}

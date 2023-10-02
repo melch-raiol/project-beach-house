@@ -1,16 +1,16 @@
 .container-studio {
-  height: 200vh;
+  height: 180vh;
   width: 100wh;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .container-Ap-Datails {
-  height: 180vh;
+  height: 150vh;
   width: 80vw;
 
   display: flex;
@@ -25,7 +25,7 @@
 
   display: flex;
 
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .buttons-ap-details {
@@ -35,7 +35,7 @@
   flex-direction: column;
   align-items: center;
   gap: 3%;
-  border: 3px solid pink;
+  /* border: 3px solid pink; */
 }
 
 .buttons-ap-details > h1 {
@@ -43,7 +43,7 @@
 }
 
 .descriptions-ap-details {
-  height: 90vh;
+  height: 50vh;
   width: 80vw;
 
   border: 3px solid gray;
@@ -53,6 +53,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.btn-email {
+  font-size: 1.3rem;
+  color: white;
+  background-color: #55c1e2;
+  border: none;
+}
+
+.btn-email:hover {
+  border: 4px solid #55c1e2;
+  background-color: #3f96b1;
 }
 
 @media (max-width: 800px) {
