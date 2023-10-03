@@ -45,6 +45,9 @@ button {
 .btn-reservas {
   height: 5vh;
   width: 10vw;
+  font-size: 1.3rem;
+  color: white;
+  border: none;
   border-radius: 10px;
 }
 
