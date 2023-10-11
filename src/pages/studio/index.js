@@ -47,7 +47,7 @@ export default function Studio() {
             </div>
           </div>
           <div className="descriptions-ap-details">
-            <div className="div-description">
+            <div className="div-description apartament-title">
               <h1>Apartamento {apartments[3].name}</h1>
             </div>
             <div className="div-description icon">
@@ -66,7 +66,7 @@ export default function Studio() {
               <img src={bathRoom} alt="banheiro ícone" />
               <h1> {apartments[3].info[0].bathroom}</h1>
             </div>
-            <div className="div-description icon">
+            <div className="div-description icon private-area">
               <img src={privateArea} alt="área privada ícone" />
               <h1> {apartments[3].info[0].privateArea}</h1>
             </div>

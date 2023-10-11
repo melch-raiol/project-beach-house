@@ -23,7 +23,7 @@ export default function SliderApartaments({
       <Swiper modules={[FreeMode, Navigation, Thumbs]} navigation pagination>
         {slides.map((slide) => (
           <SwiperSlide>
-            <div className="img apartaments">
+            <div className="apartaments">
               <img
                 className="slide-img  "
                 src={slide.imagem}

@@ -1,5 +1,5 @@
 .container-studio {
-  height: 180vh;
+  height: 200vh;
   width: 100wh;
 
   display: flex;
@@ -20,12 +20,12 @@
 }
 
 .div-img-buttons {
-  height: 90vh;
+  height: 36%;
   width: 80vw;
 
   display: flex;
 
-  /* border: 1px solid green; */
+  border: 1px solid rgb(245, 14, 156);
 }
 
 .buttons-ap-details {
@@ -43,10 +43,10 @@
 }
 
 .descriptions-ap-details {
-  height: 30%;
+  height: 40%;
   width: 80vw;
 
-  /* border: 3px solid gray; */
+  border: 3px solid gray;
 }
 
 .div-description {
@@ -55,12 +55,13 @@
   flex-direction: row;
   margin-top: 1%;
   margin-left: 5%;
-  /* border: 3px solid gray; */
+  border: 3px solid gray;
 }
 
 .div-description > h1 {
   margin-left: 3%;
-  /* border: 3px solid gray; */
+  width: 100%;
+  border: 3px solid gray;
 }
 
 .icon {
@@ -72,10 +73,33 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 3px solid gray;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
   .div-img-buttons {
     flex-direction: column;
+  }
+
+  .buttons-ap-details {
+    height: 40%;
+    width: 100%;
+  }
+
+  .div-description {
+    font-size: 0.5rem;
+  }
+
+  .private-area {
+    font-size: 0.35rem;
+  }
+
+  .apartament-title {
+    width: 80%;
+  }
+
+  .icon {
+    height: 10%;
+    width: 90%;
   }
 }
