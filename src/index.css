@@ -51,8 +51,30 @@ button {
   border-radius: 10px;
 }
 
+.btn-whatsapp {
+  background-color: #4fce5d;
+}
+
+.btn-whatsapp:hover {
+  border: 4px solid #0da31f;
+  background-color: #5ff070;
+}
+
+.btn-airbnb {
+  background-color: #ff5a5f;
+}
+
+.btn-airbnb:hover {
+  border: 4px solid #fc383f;
+  background-color: #fd7075;
+}
+
 @media (max-width: 800px) {
   .section-title {
     font-size: 2em;
+  }
+
+  .btn-reservas {
+    width: 30vw;
   }
 }

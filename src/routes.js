@@ -14,6 +14,7 @@ export default function MainRoutes() {
         <Route path="/tres_quartos" element={<ThreeRooms />} />
         <Route path="/quatro_quartos_deck" element={<FourRoomsDeck />} />
         <Route path="/quatro_quartos_quintal" element={<FourRoomsBackyard />} />
+        {/* <Whatsapp /> */}
       </Routes>
     </>
   );

@@ -2,7 +2,6 @@ import img01 from "../../assets/Imags/studio/img-studio-01.jpg";
 import img02 from "../../assets/Imags/studio/img-studio-02.jpg";
 import img03 from "../../assets/Imags/studio/img-studio-03.jpg";
 import img04 from "../../assets/Imags/studio/img-studio-04.jpg";
-import BtnWhatsapp from "../../components/BtnWhatsapp";
 
 import bedIcon from "../../assets/icons/bed.svg";
 import wifiIcon from "../../assets/icons/wifi.svg";
@@ -17,12 +16,13 @@ import HeaderApartaments from "../../components/HeaderApartaments";
 import SliderApartaments from "../../components/SliderApartaments";
 import apartments from "../../databases/databases";
 import "./styles.css";
+import Whatsapp from "../../components/Whatsapp";
 
 export default function Studio() {
   return (
     <div className="studio">
       <HeaderApartaments />
-
+      <Whatsapp />
       <main className="container-studio">
         <div className="container-Ap-Datails">
           <div className="div-img-buttons">
@@ -36,14 +36,24 @@ export default function Studio() {
             </div>
             <div className="buttons-ap-details">
               <h1>Reservas aqui</h1>
-              <a
-                target="_blank"
-                href="https://wa.me/5547997551106?text=Ol%C3%A1%21"
-                rel="noreferrer"
-              >
-                <BtnWhatsapp />
-              </a>
-              <button className="btn-reservas">Airbnb</button>
+              <div className="div-btn-reservation">
+                <a
+                  target="_blank"
+                  href="https://wa.me/5547997551106?text=Ol%C3%A1%21"
+                  rel="noreferrer"
+                >
+                  <button className="btn-reservas btn-whatsapp">
+                    Whatsapp
+                  </button>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.airbnb.com.br/rooms/46407357?_set_bev_on_new_domain=1697134254_OGMwZDVjYTg1ZTRl&source_impression_id=p3_1697134255_AW0QZCt4TSD90oru"
+                  rel="noreferrer"
+                >
+                  <button className="btn-reservas btn-airbnb">Airbnb</button>
+                </a>
+              </div>
             </div>
           </div>
           <div className="descriptions-ap-details">

@@ -1,6 +1,6 @@
 .logo-whatsapp {
-  width: 80px;
   height: 80px;
+  width: 80px;
 }
 
 .img-whatsapp {
@@ -20,6 +20,6 @@
 @media (max-width: 768px) {
   .img-whatsapp {
     height: 35px;
-    width: auto;
+    width: 35px;
   }
 }
