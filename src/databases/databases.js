@@ -77,8 +77,8 @@ const apartments = [
         wiFi: "tem WiFi",
         livingRoom: "smart TV com Netflix",
         bathroom: "1 banheiro",
-        privateArea:
-          "se localiza a 20 metros da praia com churrasqueira (sem vista ao mar)",
+        privateArea: "se localiza a 20 metros da praia (sem vista ao mar)",
+        grill: "possui churrasqueira",
         kitchen: "cozinha completa",
         quantityOfPeaple: "Capacidade para até 4 pessoas",
         fullInfo:

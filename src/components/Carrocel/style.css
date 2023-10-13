@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  border: 2px solid rgb(33, 47, 248);
+  /* border: 2px solid rgb(33, 47, 248); */
 }
 
 .texto-imagem {

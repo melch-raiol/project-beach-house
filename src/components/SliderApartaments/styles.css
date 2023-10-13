@@ -9,7 +9,7 @@
   height: 59vh;
   width: 100%;
 
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
 }
 
 @media (max-width: 800px) {

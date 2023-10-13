@@ -16,7 +16,8 @@
   display: flex;
   flex-direction: column;
   background-color: rgb(211, 209, 209);
-  border: 1px solid blue;
+  border-radius: 10px;
+  border: 1px solid gray;
 }
 
 .div-btn-reservation {
@@ -36,7 +37,7 @@
 
   display: flex;
 
-  border: 1px solid rgb(245, 14, 156);
+  /* border: 1px solid rgb(245, 14, 156); */
 }
 
 .buttons-ap-details {
@@ -54,33 +55,43 @@
 }
 
 .descriptions-ap-details {
-  height: 50%;
+  height: 60%;
   width: 80vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   /* border: 3px solid gray; */
 }
 
 .div-description {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: row;
   margin-top: 1%;
   margin-left: 5%;
-  /* border: 3px solid gray; */
+  /* border: 3px solid black; */
 }
 
 .div-description > h1 {
   margin-left: 3%;
+  height: 50%;
   width: 100%;
+  display: flex;
+  align-items: center;
   /* border: 3px solid gray; */
 }
 
-.icon {
+.div-description > img {
+  height: 70%;
+  width: 15%;
+  /* 
+  border: 3px solid red; */
+}
+
+/* .icon {
   height: 15%;
   width: 90%;
-}
+} */
 
 .buttons-ap-details {
   display: flex;

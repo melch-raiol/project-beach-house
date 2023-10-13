@@ -20,9 +20,10 @@ import Whatsapp from "../../components/Whatsapp";
 
 export default function Studio() {
   return (
-    <div className="studio">
-      <HeaderApartaments />
+    <div className="container-main">
+      <HeaderApartaments title={apartments[3].name} />
       <Whatsapp />
+
       <main className="container-studio">
         <div className="container-Ap-Datails">
           <div className="div-img-buttons">
@@ -57,9 +58,6 @@ export default function Studio() {
             </div>
           </div>
           <div className="descriptions-ap-details">
-            <div className="div-description apartament-title">
-              <h1>Apartamento {apartments[3].name}</h1>
-            </div>
             <div className="div-description icon">
               <img src={bedIcon} alt="quarto ícone" />
               <h1> {apartments[3].info[0].rooms}</h1>
@@ -87,6 +85,10 @@ export default function Studio() {
             <div className="div-description icon">
               <img src={person} alt="" />
               <h1>{apartments[3].info[0].quantityOfPeaple}</h1>
+            </div>
+            <div className="div-description icon">
+              <img src={person} alt="" />
+              <h1>{apartments[3].info[0].grill}</h1>
             </div>
           </div>
         </div>
