@@ -35,7 +35,7 @@ export default function Studio() {
               />
             </div>
             <div className="buttons-ap-details">
-              <h1>Reservas aqui</h1>
+              <h1>Reservas</h1>
               <div className="div-btn-reservation">
                 <a
                   target="_blank"

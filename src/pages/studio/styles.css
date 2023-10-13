@@ -1,5 +1,5 @@
 .container-studio {
-  height: 200vh;
+  height: 190vh;
   width: 100vw;
 
   display: flex;
@@ -17,6 +17,17 @@
   flex-direction: column;
   background-color: rgb(211, 209, 209);
   border: 1px solid blue;
+}
+
+.div-btn-reservation {
+  height: 13%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  /* border: 2px red solid; */
 }
 
 .div-img-buttons {
@@ -43,9 +54,11 @@
 }
 
 .descriptions-ap-details {
-  height: 40%;
+  height: 50%;
   width: 80vw;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   /* border: 3px solid gray; */
 }
 
@@ -78,8 +91,7 @@
 
 @media (max-width: 1080px) {
   .container-studio {
-    margin-top: -400px;
-    /* gambiarra provisória */
+    height: 110vh;
   }
 
   .container-Ap-Datails {
@@ -93,8 +105,9 @@
   }
 
   .buttons-ap-details {
-    height: 30%;
+    height: 60%;
     width: 100%;
+    /* border: 2px gray solid; */
   }
 
   .buttons-ap-details > h1 {
@@ -102,9 +115,9 @@
   }
 
   .div-btn-reservation {
-    height: 50%;
+    height: 70%;
     width: 90%;
-    display: flex;
+
     flex-direction: row;
     justify-content: space-between;
 
