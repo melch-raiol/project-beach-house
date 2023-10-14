@@ -69,6 +69,10 @@ button {
   background-color: #fd7075;
 }
 
+li {
+  list-style-type: none;
+}
+
 @media (max-width: 800px) {
   .section-title {
     font-size: 2em;

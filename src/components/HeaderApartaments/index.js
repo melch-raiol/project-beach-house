@@ -11,7 +11,7 @@ export default function Header({ title }) {
 
   return (
     <header className="container-header">
-      <img className="logo" src={Logo} />
+      <img className="logo" src={Logo} alt="logo" />
 
       <nav>
         <ul className="ul-header-apartament">

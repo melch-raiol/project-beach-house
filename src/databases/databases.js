@@ -11,14 +11,13 @@ const apartments = [
       {
         rooms:
           "5 quartos com cama casal ( 3 com ar condicionado e 2 com ventilador)",
-      },
-      { wiFi: "tem WiFi" },
-      { livingRoom: "sala com smart TV" },
-      { bathroom: "2 banheiros" },
-      { privateArea: "area de churrasqueira privada com vista ao mar" },
-      { kitchen: "cozinha completa" },
-      { quantityOfPeaple: "Capacidade para até 10 pessoas" },
-      {
+        wiFi: "WiFi",
+        livingRoom: "sala com smart TV",
+        bathroom: "2 banheiros",
+        privateArea: "area de churrasqueira privada com vista ao mar",
+        grill: "Churrasqueira",
+        kitchen: "Cozinha completa",
+        quantityOfPeaple: "Capacidade para até 10 pessoas",
         fullInfo:
           "Nosso apartamento de 5 quartos tem Wi-Fi, sala com smart TV, 2 banheiros, area de churrasqueira privada com vista ao mar, 5 quartos com cama casal ( 3 com ar condicionado e 2 com ventilador) e cozinha completa. Capacidade para até 10 pessoas.",
       },
@@ -31,14 +30,13 @@ const apartments = [
       {
         rooms:
           "4 quartos (2 casal com ar condicionado, 1 quarto casal com ventilador e 1 quarto solteiro com ventilador)",
-      },
-      { wiFi: "tem WiFi" },
-      { livingRoom: "sala com smart TV" },
-      { bathroom: "2 banheiro" },
-      { privateArea: "churrasqueira portátil, sacada com vista ao mar" },
-      { kitchen: "cozinha completa" },
-      { quantityOfPeaple: "Capacidade para até 8 pessoas" },
-      {
+        wiFi: "tem WiFi",
+        livingRoom: "sala com smart TV",
+        bathroom: "2 banheiro",
+        privateArea: "Sacada com vista ao mar",
+        grill: "Churrasqueira",
+        kitchen: "cozinha completa",
+        quantityOfPeaple: "Capacidade para até 8 pessoas",
         fullInfo:
           "Nosso apartamento de 4 quartos tem Wi-Fi, sala com smart TV, 2 banheiros, area de churrasqueira privada com vista ao mar, cozinha completa, 4 quartos (2 casal com ar condicionado, 1 casal com ventilador e 1 solteiro com ventilador) e cozinha completa. Capacidade para até 8 pessoas.",
       },
@@ -48,21 +46,16 @@ const apartments = [
     name: "Apartamento 3 quartos",
     image: img3,
     info: [
-      { rooms: "Possui 3 quartos" },
-      { wiFi: "tem WiFi" },
-      { livingRoom: "Sala smart TV" },
-      { bathroom: "1 banheiro" },
-      {
-        privateArea:
-          "se localiza a 20 metros da praia com churrasqueira (sem vista ao mar)",
-      },
       {
         rooms:
           " 3 quartos com ar condicionado ( 2 com cama casal, 1 com cama casal e beliche)",
-      },
-      { kitchen: "cozinha completa" },
-      { quantityOfPeaple: "Capacidade para até 6 a 8 pessoas" },
-      {
+        wiFi: "WiFi",
+        livingRoom: "Sala smart TV",
+        bathroom: "1 banheiro",
+        privateArea: "se localiza a 20 metros da praia  (sem vista ao mar)",
+        grill: "Churrasqueira",
+        kitchen: "cozinha completa",
+        quantityOfPeaple: "Capacidade para entre 6 a 8 pessoas",
         fullInfo:
           "Nosso apartamento de 3 quartos tem Wi-Fi, sala com smart TV, 1 banheiro, churrasqueira portátil, sacada com vista ao mar, 3 quartos com ar condicionado ( 2 com cama casal e 1 com cama casal e beliche) e cozinha completa. Capacidade de 6 a 8 pessoas.",
       },
@@ -78,7 +71,7 @@ const apartments = [
         livingRoom: "Smart TV com Netflix",
         bathroom: "1 banheiro",
         privateArea: "Localiza-se a 20 metros da praia (sem vista ao mar)",
-        grill: "Possui churrasqueira",
+        grill: "Churrasqueira",
         kitchen: "Cozinha completa",
         quantityOfPeaple: "Capacidade para até 4 pessoas",
         fullInfo:
