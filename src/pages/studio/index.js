@@ -10,6 +10,7 @@ import bathRoom from "../../assets/icons/bathroom.svg";
 import privateArea from "../../assets/icons/privateArea.svg";
 import kitchen from "../../assets/icons/kitchen.svg";
 import person from "../../assets/icons/person.svg";
+import grill from "../../assets/icons/grill.svg";
 
 import Footer from "../../components/Footer";
 import HeaderApartaments from "../../components/HeaderApartaments";
@@ -27,7 +28,7 @@ export default function Studio() {
       <main className="container-studio">
         <div className="container-Ap-Datails">
           <div className="div-img-buttons">
-            <div className="imagem-ap">
+            <div className="image-ap">
               <SliderApartaments
                 imagem01={img01}
                 imagem02={img02}
@@ -87,7 +88,7 @@ export default function Studio() {
               <h1>{apartments[3].info[0].quantityOfPeaple}</h1>
             </div>
             <div className="div-description icon">
-              <img src={person} alt="" />
+              <img src={grill} alt="" />
               <h1>{apartments[3].info[0].grill}</h1>
             </div>
           </div>

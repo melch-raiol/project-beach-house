@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Logo from "../../assets/logo-blue.jpeg";
+import Logo from "../../assets/logo.png";
 import "./styles.css";
 
 export default function Header() {

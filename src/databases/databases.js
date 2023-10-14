@@ -69,17 +69,17 @@ const apartments = [
     ],
   },
   {
-    name: "Studio",
+    name: "Apartamento Studio",
     image: img4,
     info: [
       {
-        rooms: "um só ambiente",
-        wiFi: "tem WiFi",
-        livingRoom: "smart TV com Netflix",
+        rooms: "Um só ambiente",
+        wiFi: "WiFi",
+        livingRoom: "Smart TV com Netflix",
         bathroom: "1 banheiro",
-        privateArea: "se localiza a 20 metros da praia (sem vista ao mar)",
-        grill: "possui churrasqueira",
-        kitchen: "cozinha completa",
+        privateArea: "Localiza-se a 20 metros da praia (sem vista ao mar)",
+        grill: "Possui churrasqueira",
+        kitchen: "Cozinha completa",
         quantityOfPeaple: "Capacidade para até 4 pessoas",
         fullInfo:
           "Nosso apartamento studio tem um só ambiente, se localiza a 20 metros da praia (sem vista ao mar) e possui 1 cama casal, 1 sofa cama casal, Wi-Fi, smart TV com Netflix, ar condicionado, 1 banheiro, churrasqueira e cozinha completa. Capacidade para até 4 pessoas",
