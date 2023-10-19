@@ -1,0 +1,19 @@
+.container-test {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.test1 {
+  background-color: red;
+}
+
+.test2 {
+  background-color: blue;
+}
+
+.test3 {
+  background-color: blueviolet;
+}

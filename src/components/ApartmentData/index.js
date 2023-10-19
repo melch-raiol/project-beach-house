@@ -1,28 +1,20 @@
 import "./styles.css";
-import HeaderApartaments from "../../components/HeaderApartaments";
-import apartments from "../../databases/databases";
-import Footer from "../../components/Footer";
 import Whatsapp from "../../components/Whatsapp";
 import SliderApartaments from "../../components/SliderApartaments";
-
-import img01 from "../../assets/Imags/studio/img-studio-01.jpg";
-import img02 from "../../assets/Imags/studio/img-studio-02.jpg";
-import img03 from "../../assets/Imags/studio/img-studio-03.jpg";
-import img04 from "../../assets/Imags/studio/img-studio-04.jpg";
 
 import bedIcon from "../../assets/icons/bed.svg";
 import wifiIcon from "../../assets/icons/wifi.svg";
 import livingRoomIcon from "../../assets/icons/icons8-sala-de-estar-64.png";
-import bathRoom from "../../assets/icons/bathroom.svg";
-import privateArea from "../../assets/icons/privateArea.svg";
-import kitchen from "../../assets/icons/kitchen.svg";
-import person from "../../assets/icons/person.svg";
-import grill from "../../assets/icons/grill.svg";
+import bathRoomIcon from "../../assets/icons/bathroom.svg";
+import privateAreaIcon from "../../assets/icons/privateArea.svg";
+import kitchenIcon from "../../assets/icons/kitchen.svg";
+import personIcon from "../../assets/icons/person.svg";
+import grillIcon from "../../assets/icons/grill.svg";
 
-export default function Studio() {
+export default function ApartmentData({ apartmentProps, icons }) {
+  console.log(icons);
   return (
     <div className="container-main">
-      <HeaderApartaments title={apartments[3].name} />
       <Whatsapp />
 
       <main className="container-studio">
@@ -30,10 +22,10 @@ export default function Studio() {
           <div className="div-img-buttons">
             <div className="image-ap">
               <SliderApartaments
-                imagem01={img01}
-                imagem02={img02}
-                imagem03={img03}
-                imagem04={img04}
+                imagem01={apartmentProps.imagem01}
+                imagem02={apartmentProps.imagem02}
+                imagem03={apartmentProps.imagem03}
+                imagem04={apartmentProps.imagem04}
               />
             </div>
             <div className="buttons-ap-details">
@@ -61,40 +53,39 @@ export default function Studio() {
           <div className="descriptions-ap-details">
             <div className="div-description icon">
               <img src={bedIcon} alt="quarto ícone" />
-              <h1> {apartments[2].info[0].rooms}</h1>
+              <h1> {apartmentProps.info[0].rooms}</h1>
             </div>
             <div className="div-description icon">
               <img src={wifiIcon} alt="" />
-              <h1> {apartments[2].info[0].wiFi}</h1>
+              <h1> {apartmentProps.info[0].wiFi}</h1>
             </div>
             <div className="div-description icon">
               <img src={livingRoomIcon} alt="sala ícone" />
-              <h1> {apartments[2].info[0].livingRoom}</h1>
+              <h1> {apartmentProps.info[0].livingRoom}</h1>
             </div>
             <div className="div-description icon">
-              <img src={bathRoom} alt="banheiro ícone" />
-              <h1> {apartments[2].info[0].bathroom}</h1>
+              <img src={bathRoomIcon} alt="banheiro ícone" />
+              <h1> {apartmentProps.info[0].bathroom}</h1>
             </div>
             <div className="div-description icon private-area">
-              <img src={privateArea} alt="área privada ícone" />
-              <h1> {apartments[2].info[0].privateArea}</h1>
+              <img src={privateAreaIcon} alt="área privada ícone" />
+              <h1> {apartmentProps.info[0].privateArea}</h1>
             </div>
             <div className="div-description icon">
-              <img src={kitchen} alt="cozinha ícone" />
-              <h1> {apartments[2].info[0].kitchen}</h1>
+              <img src={kitchenIcon} alt="cozinha ícone" />
+              <h1> {apartmentProps.info[0].kitchen}</h1>
             </div>
             <div className="div-description icon">
-              <img src={person} alt="" />
-              <h1>{apartments[2].info[0].quantityOfPeaple}</h1>
+              <img src={personIcon} alt="" />
+              <h1>{apartmentProps.info[0].quantityOfPeaple}</h1>
             </div>
             <div className="div-description icon">
-              <img src={grill} alt="" />
-              <h1>{apartments[2].info[0].grill}</h1>
+              <img src={grillIcon} alt="" />
+              <h1>{apartmentProps.info[0].grill}</h1>
             </div>
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

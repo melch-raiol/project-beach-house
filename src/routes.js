@@ -1,21 +1,17 @@
 import { Route, Routes } from "react-router-dom";
-import FourRoomsBackyard from "./pages/FourRoomsBackyard";
-import FourRoomsDeck from "./pages/FourRoomsDeck";
 import Home from "./pages/Home";
 import Studio from "./pages/studio";
-import ThreeRooms from "./pages/threeRooms";
+import Apartament from "./pages/Apartament";
+import { ContextProvider } from "./context/context";
 
 export default function MainRoutes() {
   return (
-    <>
+    <ContextProvider>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/apartamento/:page" element={<Apartament />} />
         <Route path="/studio" element={<Studio />} />
-        <Route path="/tres_quartos" element={<ThreeRooms />} />
-        <Route path="/quatro_quartos_deck" element={<FourRoomsDeck />} />
-        <Route path="/quatro_quartos_quintal" element={<FourRoomsBackyard />} />
-        {/* <Whatsapp /> */}
       </Routes>
-    </>
+    </ContextProvider>
   );
 }

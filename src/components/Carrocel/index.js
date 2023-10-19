@@ -11,8 +11,9 @@ import imagem03 from "../../assets/Imags/img-03.jpg";
 import imagem04 from "../../assets/Imags/img-04.jpg";
 import "./style.css";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { useBanana } from "../../context/context";
 
-export default function Carrocel() {
+export default function Carrocel({ setTest }) {
   const navigate = useNavigate();
 
   const slides = [
@@ -30,8 +31,15 @@ export default function Carrocel() {
     },
   ];
 
+  const { page, setPage } = useBanana();
+
   function navagation(route) {
     navigate(`/${route}`);
+  }
+
+  function handleTest(route) {
+    setPage(route);
+    navigate(`/apartamento/${route}`);
   }
 
   return (
@@ -45,7 +53,7 @@ export default function Carrocel() {
                 <strong className="texto-imagem">{slide.name}</strong>
                 <button
                   className="btn-more-photos"
-                  onClick={() => navagation(slide.route)}
+                  onClick={() => handleTest(slide.route)}
                 >
                   Mais Fotos
                 </button>
