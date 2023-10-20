@@ -12,7 +12,7 @@ import personIcon from "../../assets/icons/person.svg";
 import grillIcon from "../../assets/icons/grill.svg";
 
 export default function ApartmentData({ apartmentProps, icons }) {
-  console.log(icons);
+  console.log(apartmentProps.image);
   return (
     <div className="container-main">
       <Whatsapp />
@@ -22,7 +22,7 @@ export default function ApartmentData({ apartmentProps, icons }) {
           <div className="div-img-buttons">
             <div className="image-ap">
               <SliderApartaments
-                imagem01={apartmentProps.imagem01}
+                imagem01={apartmentProps.image}
                 imagem02={apartmentProps.imagem02}
                 imagem03={apartmentProps.imagem03}
                 imagem04={apartmentProps.imagem04}

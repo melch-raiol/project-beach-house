@@ -19,6 +19,8 @@
   background-color: rgb(211, 209, 209);
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+  border: 1px solid red;
 }
 
 .image-ap {
@@ -108,13 +110,12 @@
 
 @media (max-width: 1080px) {
   .container-studio {
-    height: 110vh;
+    height: 100vh;
   }
 
   .container-Ap-Datails {
     height: 100vh;
-    width: 80vw;
-    align-items: normal;
+    width: 85vw;
   }
 
   .div-img-buttons {

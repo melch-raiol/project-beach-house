@@ -1,19 +1,15 @@
 .container-test {
+  height: 190vh;
   width: 100vw;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid red;
 }
 
-.test1 {
-  background-color: red;
-}
-
-.test2 {
-  background-color: blue;
-}
-
-.test3 {
-  background-color: blueviolet;
+@media (max-width: 1080px) {
+  .container-test {
+    height: 110vh;
+    width: 100vw;
+  }
 }
