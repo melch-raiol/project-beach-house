@@ -1,9 +1,9 @@
 import Carrocel from "../../Carrocel";
 import "./styles.css";
-import { useBanana } from "../../../context/context";
+import { useContextGlogal } from "../../../context/context";
 
 export default function LayoutApartaments() {
-  const { contexto, page } = useBanana();
+  const { page } = useContextGlogal();
   console.log(page);
   return (
     <div className="container-apartaments" id="apartamentos">

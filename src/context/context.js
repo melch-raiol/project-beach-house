@@ -15,6 +15,6 @@ export function ContextProvider({ children }) {
   );
 }
 
-export function useBanana() {
+export function useContextGlogal() {
   return useContext(ContextGlobal);
 }

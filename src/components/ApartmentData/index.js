@@ -12,7 +12,6 @@ import personIcon from "../../assets/icons/person.svg";
 import grillIcon from "../../assets/icons/grill.svg";
 
 export default function ApartmentData({ apartmentProps, icons }) {
-  console.log(apartmentProps.image);
   return (
     <div className="container-main">
       <Whatsapp />

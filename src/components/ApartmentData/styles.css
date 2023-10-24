@@ -1,26 +1,20 @@
 .container-studio {
   height: 190vh;
   width: 100vw;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* border: 1px solid red; */
 }
 
 .container-Ap-Datails {
   height: 170vh;
   width: 80vw;
-
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: rgb(211, 209, 209);
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-
-  border: 1px solid red;
 }
 
 .image-ap {
@@ -35,8 +29,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
-  /* border: 2px red solid; */
 }
 
 .div-img-buttons {
@@ -44,8 +36,6 @@
   width: 76vw;
   display: flex;
   margin-top: 2%;
-
-  /* border: 1px solid rgb(245, 14, 156); */
 }
 
 .buttons-ap-details {
@@ -55,7 +45,6 @@
   flex-direction: column;
   align-items: center;
   gap: 3%;
-  /* border: 3px solid pink; */
 }
 
 .buttons-ap-details > h1 {
@@ -68,7 +57,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* border: 3px solid gray; */
 }
 
 .div-description {
@@ -77,7 +65,6 @@
   flex-direction: row;
   margin-top: 1%;
   margin-left: 5%;
-  /* border: 3px solid black; */
 }
 
 .div-description > h1 {
@@ -86,26 +73,17 @@
   width: 100%;
   display: flex;
   align-items: center;
-  /* border: 3px solid gray; */
 }
 
 .div-description > img {
   height: 70%;
   width: 15%;
-  /* 
-  border: 3px solid red; */
 }
-
-/* .icon {
-  height: 15%;
-  width: 90%;
-} */
 
 .buttons-ap-details {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 3px solid gray; */
 }
 
 @media (max-width: 1080px) {
@@ -116,6 +94,7 @@
   .container-Ap-Datails {
     height: 100vh;
     width: 85vw;
+    border: 2px solid gray;
   }
 
   .div-img-buttons {
@@ -126,7 +105,7 @@
   .buttons-ap-details {
     height: 60%;
     width: 100%;
-    /* border: 2px gray solid; */
+    border: 2px solid gray;
   }
 
   .buttons-ap-details > h1 {
@@ -139,13 +118,10 @@
 
     flex-direction: row;
     justify-content: space-between;
-
-    /* border: 2px red solid; */
   }
 
   .div-btn-reservation > button {
     width: 40%;
-    border: 2px red solid;
   }
 
   .descriptions-ap-details {
@@ -157,10 +133,6 @@
     font-size: 0.5rem;
   }
 
-  .private-area {
-    font-size: 0.35rem;
-  }
-
   .apartament-title {
     width: 80%;
   }
@@ -168,5 +140,9 @@
   .icon {
     height: 10%;
     width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5em;
   }
 }

@@ -11,7 +11,7 @@ import imagem03 from "../../assets/Imags/img-03.jpg";
 import imagem04 from "../../assets/Imags/img-04.jpg";
 import "./style.css";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
-import { useBanana } from "../../context/context";
+import { useContextGlogal } from "../../context/context";
 
 export default function Carrocel({ setTest }) {
   const navigate = useNavigate();
@@ -31,11 +31,7 @@ export default function Carrocel({ setTest }) {
     },
   ];
 
-  const { page, setPage } = useBanana();
-
-  function navagation(route) {
-    navigate(`/${route}`);
-  }
+  const { page, setPage } = useContextGlogal();
 
   function handleTest(route) {
     setPage(route);
