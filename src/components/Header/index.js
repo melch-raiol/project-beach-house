@@ -4,8 +4,8 @@ import "./styles.css";
 
 export default function Header() {
   const [activedMenu, setActivedMenu] = useState(true);
-  const [checkbox, setCheckbox] = useState(true);
-
+  const [checkbox, setCheckbox] = useState(false);
+  console.log(checkbox);
   function handleActivedMenu() {
     setActivedMenu(!activedMenu);
     setCheckbox(!checkbox);
@@ -32,8 +32,9 @@ export default function Header() {
       <img className="logo" src={Logo} />
 
       <input
-        // type="checkbox"
-        type={checkbox ? "checkbox" : ""}
+        type="checkbox"
+        checked={checkbox}
+        //type={checkbox ? "checkbox" : ""}
         id="checkbox-menu"
         onClick={() => handleActivedMenu()}
       />
