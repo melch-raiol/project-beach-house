@@ -13,8 +13,9 @@
 }
 
 .slide-img {
+  height: 100%;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .texto-imagem {
@@ -32,11 +33,9 @@
   gap: 7%;
   position: absolute;
   bottom: 2px;
-  background: linear-gradient(
-    132deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0)
-  );
+  background: linear-gradient(132deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0));
   backdrop-filter: blur(5px);
   border-radius: 20px;
 }
