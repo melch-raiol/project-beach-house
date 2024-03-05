@@ -1,14 +1,18 @@
 .container-test {
-  height: 190vh;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-@media (max-width: 1080px) {
-  .container-test {
-    height: 110vh;
-    width: 100vw;
-  }
+.container-hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 80%;
+  width: 100%;
 }

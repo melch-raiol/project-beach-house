@@ -13,11 +13,8 @@ import grillIcon from "../../assets/icons/grill.svg";
 
 export default function ApartmentData({ apartmentProps, icons }) {
   return (
-    <div className="container-main">
-      <Whatsapp />
 
-      <main className="container-studio">
-        <div className="container-Ap-Datails">
+        <div className="container-ap-details">
           <div className="div-img-buttons">
             <div className="image-ap">
               <SliderApartaments
@@ -84,7 +81,6 @@ export default function ApartmentData({ apartmentProps, icons }) {
             </div>
           </div>
         </div>
-      </main>
-    </div>
+      
   );
 }

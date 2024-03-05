@@ -9,9 +9,9 @@ export default function Test() {
   const { page } = useParams();
 
   return (
-    <>
+    <div className="container-test">
       <HeaderApartaments />
-      <div className="container-test">
+      <div className="container-hero">
         {page === "studio" ? (
           <ApartmentData apartmentProps={apartments[3]} icons={apartments[4]} />
         ) : null}
@@ -26,6 +26,6 @@ export default function Test() {
         ) : null}
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
