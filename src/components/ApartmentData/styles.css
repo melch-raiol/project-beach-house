@@ -58,21 +58,23 @@
   margin-top: 2%;
   justify-content: center;
   align-items: center;
-
 }
 
 .buttons-ap-details {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 3%;
+  margin-top: 2%;
+  border-radius: 10px;
+
+  border: 1px solid gray;
 }
 
 .buttons-ap-details>h1 {
-  margin-top: 10%;
+  font-size: 1.5rem;
+
 }
 
 .descriptions-ap-details {
@@ -87,6 +89,7 @@
   width: 40%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-top: 1%;
   margin-left: 5%;
 }
@@ -96,6 +99,7 @@
   height: 50%;
   width: 100%;
   display: flex;
+  justify-content:flex-start;
   align-items: center;
 }
 
@@ -104,12 +108,12 @@
   width: 15%;
 }
 
-.buttons-ap-details {
+/* .buttons-ap-details {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 .icon {
   height: 10%;
@@ -120,72 +124,22 @@ h1 {
   font-size: 0.75rem;
 }
 
-/* @media (max-width: 1080px) {
-  .container-studio {
-    height: 100vh;
+@media (min-width: 1080px) {
+ 
+  .div-description>img {
+    height: 1%;
+    width: 5%;
   }
 
-  .container-ap-details {
-    
-    height: 100%;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-   
-  }
-
-  .div-img-buttons {
-    height: 25%;
-    flex-direction: column;
-  }
-
-  .buttons-ap-details {
-    height: 60%;
-    width: 100%;
-    
-  }
-
-  .buttons-ap-details>h1 {
-    margin-top: 0%;
-  }
-
-  .div-btn-reservation {
-    height: 70%;
-    width: 90%;
-
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .div-btn-reservation>button {
-    width: 40%;
-  }
-
-  .descriptions-ap-details {
-    height: 50%;
-    margin-top: 25px;
-  
-  }
-
-  .div-description {
-    font-size: 0.5rem;
-  }
-
-  .apartament-title {
+  .buttons-ap-details{
     width: 80%;
   }
 
-  .icon {
-    height: 10%;
-    width: 90%;
+  .div-description>h1 {
+   font-size: 1.3rem;
   }
 
-  h1 {
-    font-size: 1.5em;
+  .div-btn-reservation{
+    width: 50%;
   }
-}
-
-@media (max-width: 400px){
-
-} */
+} 
