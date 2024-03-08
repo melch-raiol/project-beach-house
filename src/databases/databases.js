@@ -1,12 +1,12 @@
-import img1 from "./ap_05_rooms_img_01.jpg";
-import img2 from "./ap_04_rooms_img_01.jpg";
-import img3 from "./ap_03_rooms_img_01.jpg";
-import img4 from "./ap_studio_img_01.jpg";
+import ap_05_rooms_01 from "./ap_05_rooms_img_01.jpg";
+import ap_04_rooms_01 from "./ap_04_rooms_img_01.jpg";
+import ap_03_rooms_01 from "./ap_03_rooms_img_01.jpg";
+import ap_studio_01 from "./ap_studio_img_01.jpg";
 
 const apartments = [
   {
     name: "Apartamento 5 quartos",
-    image: img1,
+    images: [ap_05_rooms_01, ap_05_rooms_01, ap_05_rooms_01, ap_05_rooms_01],
     info: [
       {
         rooms:
@@ -25,7 +25,7 @@ const apartments = [
   },
   {
     name: "Apartamento 4 quartos",
-    image: img2,
+    images: [ap_04_rooms_01, ap_04_rooms_01, ap_04_rooms_01, ap_04_rooms_01],
     info: [
       {
         rooms:
@@ -44,7 +44,7 @@ const apartments = [
   },
   {
     name: "Apartamento 3 quartos",
-    image: img3,
+    images: [ap_03_rooms_01, ap_03_rooms_01, ap_03_rooms_01, ap_03_rooms_01],
     info: [
       {
         rooms:
@@ -63,7 +63,7 @@ const apartments = [
   },
   {
     name: "Apartamento Studio",
-    image: img4,
+    images: [ap_studio_01, ap_studio_01, ap_studio_01, ap_studio_01],
     info: [
       {
         rooms: "Um só ambiente",

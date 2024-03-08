@@ -18,10 +18,10 @@ export default function ApartmentData({ apartmentProps, icons }) {
           <div className="div-img-buttons">
             <div className="image-ap">
               <SliderApartaments
-                imagem01={apartmentProps.image}
-                imagem02={apartmentProps.imagem02}
-                imagem03={apartmentProps.imagem03}
-                imagem04={apartmentProps.imagem04}
+                imagem01={apartmentProps.images[0]}
+                imagem02={apartmentProps.images[1]}
+                imagem03={apartmentProps.images[2]}
+                imagem04={apartmentProps.images[3]}
               />
             </div>
             <div className="buttons-ap-details">
