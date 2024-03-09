@@ -6,7 +6,7 @@
 }
 
 .apartaments {
-  height: 59vh;
+  height: 110vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@
   }
 
   .apartaments {
-    height: 200px;
+    height: 40vh;
     width: 100%;
   }
 

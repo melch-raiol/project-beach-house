@@ -22,6 +22,9 @@ export default function ApartmentData({ apartmentProps, icons }) {
                 imagem02={apartmentProps.images[1]}
                 imagem03={apartmentProps.images[2]}
                 imagem04={apartmentProps.images[3]}
+                imagem05={apartmentProps.images[4]}
+                imagem06={apartmentProps.images[5]}
+                imagem07={apartmentProps.images[6]}
               />
             </div>
             <div className="buttons-ap-details">

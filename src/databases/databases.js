@@ -1,16 +1,22 @@
-import ap_05_rooms_01 from "./ap_05_rooms_img_01.jpg";
+import four_rooms_deck_img_01 from "../assets/Images/4_rooms_deck/img_01_4_rooms_with_deck.jpeg";
+import four_rooms_deck_img_02 from "../assets/Images/4_rooms_deck/img_02_4_rooms_with_deck.jpeg";
+import four_rooms_deck_img_03 from "../assets/Images/4_rooms_deck/img_03_4_rooms_with_deck.jpeg";
+import four_rooms_deck_img_04 from "../assets/Images/4_rooms_deck/img_04_4_rooms_with_deck.jpeg";
+import four_rooms_deck_img_05 from "../assets/Images/4_rooms_deck/img_05_4_rooms_with_deck.jpeg";
+import four_rooms_deck_img_06 from "../assets/Images/4_rooms_deck/img_06_4_rooms_with_deck.jpeg";
+import four_rooms_deck_img_07 from "../assets/Images/4_rooms_deck/img_07_4_rooms_with_deck.jpeg";
 import ap_04_rooms_01 from "./ap_04_rooms_img_01.jpg";
 import ap_03_rooms_01 from "./ap_03_rooms_img_01.jpg";
 import ap_studio_01 from "./ap_studio_img_01.jpg";
 
 const apartments = [
   {
-    name: "Apartamento 5 quartos",
-    images: [ap_05_rooms_01, ap_05_rooms_01, ap_05_rooms_01, ap_05_rooms_01],
+    name: "Apartamento 4 quartos com deck",
+    images: [four_rooms_deck_img_01, four_rooms_deck_img_02,four_rooms_deck_img_03, four_rooms_deck_img_04, four_rooms_deck_img_05, four_rooms_deck_img_06, four_rooms_deck_img_07],
     info: [
       {
         rooms:
-          "5 quartos com cama casal ( 3 com ar condicionado e 2 com ventilador)",
+          "4 quartos com cama casal ( 3 com ar condicionado e 2 com ventilador)",
         wiFi: "WiFi",
         livingRoom: "sala com smart TV",
         bathroom: "2 banheiros",
@@ -24,7 +30,7 @@ const apartments = [
     ],
   },
   {
-    name: "Apartamento 4 quartos",
+    name: "Apartamento 4 quartos com quintal",
     images: [ap_04_rooms_01, ap_04_rooms_01, ap_04_rooms_01, ap_04_rooms_01],
     info: [
       {

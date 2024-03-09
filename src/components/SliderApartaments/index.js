@@ -10,12 +10,18 @@ export default function SliderApartaments({
   imagem02,
   imagem03,
   imagem04,
+  imagem05,
+  imagem06,
+  imagem07
 }) {
   const slides = [
     { imagem: imagem01 },
     { imagem: imagem02 },
     { imagem: imagem03 },
     { imagem: imagem04 },
+    { imagem: imagem05 },
+    { imagem: imagem06 },
+    { imagem: imagem07 },
   ];
 
   return (
