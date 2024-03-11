@@ -6,14 +6,14 @@
 }
 
 .apartaments {
-  height: 110vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  object-fit: cover;
 
-
-  /* border: 1px solid gray; */
+  border: 1px solid gray;
 }
 
 @media (max-width: 800px) {
@@ -22,13 +22,5 @@
     height: 100%;
   }
 
-  .apartaments {
-    height: 40vh;
-    width: 100%;
-  }
-
-  .apartaments>img {
-    height: 100%;
-    width: 100%;
-  }
+ 
 }

@@ -13,6 +13,22 @@ import three_rooms_img_04 from "../assets/Images/3_rooms/img_04_3_rooms.JPG";
 import three_rooms_img_05 from "../assets/Images/3_rooms/img_05_3_rooms.JPG";
 import three_rooms_img_06 from "../assets/Images/3_rooms/img_06_3_rooms.JPG";
 
+import studio_img_01 from "../assets/Images/studio/img_studio_01.jpg";
+import studio_img_02 from "../assets/Images/studio/img_studio_02.png";
+import studio_img_03 from "../assets/Images/studio/img_studio_03.JPG";
+import studio_img_04 from "../assets/Images/studio/img_studio_04.JPG";
+import studio_img_05 from "../assets/Images/studio/img_studio_05.JPG";
+import studio_img_06 from "../assets/Images/studio/img_studio_06.JPG";
+import studio_img_07 from "../assets/Images/studio/img_studio_07.JPG";
+
+import three_rooms_yard_img_01 from "../assets/Images/4_rooms_yard/img_01_3_rooms_yard.JPG";
+import three_rooms_yard_img_02 from "../assets/Images/4_rooms_yard/img_02_3_rooms_yard.png";
+import three_rooms_yard_img_03 from "../assets/Images/4_rooms_yard/img_03_3_rooms_yard.JPG";
+import three_rooms_yard_img_04 from "../assets/Images/4_rooms_yard/img_04_3_rooms_yard.JPG";
+import three_rooms_yard_img_05 from "../assets/Images/4_rooms_yard/img_05_3_rooms_yard.JPG";
+import three_rooms_yard_img_06 from "../assets/Images/4_rooms_yard/img_06_3_rooms_yard.JPG";
+import three_rooms_yard_img_07 from "../assets/Images/4_rooms_yard/img_07_3_rooms_yard.JPG";
+
 import ap_04_rooms_01 from "./ap_04_rooms_img_01.jpg";
 // import ap_03_rooms_01 from "./ap_03_rooms_img_01.jpg";
 import ap_studio_01 from "./ap_studio_img_01.jpg";
@@ -39,7 +55,7 @@ const apartments = [
   },
   {
     name: "Apartamento 4 quartos com quintal",
-    images: [ap_04_rooms_01, ap_04_rooms_01, ap_04_rooms_01, ap_04_rooms_01],
+    images: [three_rooms_yard_img_01, three_rooms_yard_img_02, three_rooms_yard_img_03, three_rooms_yard_img_04, three_rooms_yard_img_05, three_rooms_yard_img_06, three_rooms_yard_img_07],
     info: [
       {
         rooms:
@@ -77,7 +93,7 @@ const apartments = [
   },
   {
     name: "Apartamento Studio",
-    images: [ap_studio_01, ap_studio_01, ap_studio_01, ap_studio_01],
+    images: [studio_img_01, studio_img_02, studio_img_03, studio_img_04, studio_img_05, studio_img_06, studio_img_07],
     info: [
       {
         rooms: "Um só ambiente",
