@@ -5,8 +5,16 @@ import four_rooms_deck_img_04 from "../assets/Images/4_rooms_deck/img_04_4_rooms
 import four_rooms_deck_img_05 from "../assets/Images/4_rooms_deck/img_05_4_rooms_with_deck.jpeg";
 import four_rooms_deck_img_06 from "../assets/Images/4_rooms_deck/img_06_4_rooms_with_deck.jpeg";
 import four_rooms_deck_img_07 from "../assets/Images/4_rooms_deck/img_07_4_rooms_with_deck.jpeg";
+
+import three_rooms_img_01 from "../assets/Images/3_rooms/img_01_3_rooms.jpg";
+import three_rooms_img_02 from "../assets/Images/3_rooms/img_02_3_rooms.png";
+import three_rooms_img_03 from "../assets/Images/3_rooms/img_03_3_rooms.JPG";
+import three_rooms_img_04 from "../assets/Images/3_rooms/img_04_3_rooms.JPG";
+import three_rooms_img_05 from "../assets/Images/3_rooms/img_05_3_rooms.JPG";
+import three_rooms_img_06 from "../assets/Images/3_rooms/img_06_3_rooms.JPG";
+
 import ap_04_rooms_01 from "./ap_04_rooms_img_01.jpg";
-import ap_03_rooms_01 from "./ap_03_rooms_img_01.jpg";
+// import ap_03_rooms_01 from "./ap_03_rooms_img_01.jpg";
 import ap_studio_01 from "./ap_studio_img_01.jpg";
 
 const apartments = [
@@ -50,7 +58,7 @@ const apartments = [
   },
   {
     name: "Apartamento 3 quartos",
-    images: [ap_03_rooms_01, ap_03_rooms_01, ap_03_rooms_01, ap_03_rooms_01],
+    images: [three_rooms_img_01, three_rooms_img_02, three_rooms_img_03, three_rooms_img_04, three_rooms_img_05, three_rooms_img_06],
     info: [
       {
         rooms:
