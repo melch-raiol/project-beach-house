@@ -23,14 +23,15 @@ export default function Form() {
       from_name: name,
       message: message,
       email: email,
+      subject
     };
 
     emailjs
       .send(
-        "service_luee47e",
-        "template_6uqb2v6",
+        "service_2ri0lrh",
+        "template_x7uwisq",
         templateParams,
-        "XA3RcIqj9J19FAQkU"
+        "JSFEXBGrKf3nNCe_r"
       )
       .then(
         (res) => {
