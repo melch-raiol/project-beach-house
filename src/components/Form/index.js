@@ -11,7 +11,11 @@ export default function Form() {
   const [message, setMessage] = useState("");
   const [checkinDate, setCheckinDate] = useState("");
   const [checkoutDate, setCheckoutDate] = useState("");
-  const [quantity, setQuantity] = useState("")
+  const [personsQuantity, setPersonsQuantity] = useState("");
+
+  const handleSelection = (event) => {
+    setPersonsQuantity(event.target.value);
+  };
 
   function handleEmail(e) {
     e.preventDefault();
@@ -29,9 +33,9 @@ export default function Form() {
       subject,
       checkinDate,
       checkoutDate,
-      quantity
+      personsQuantity
     };
-    console.log(name, message, email, subject, checkinDate);//remover
+    console.log(name, message, email, subject, checkinDate, personsQuantity);//remover
     emailjs
       .send(
         "service_2ri0lrh",
@@ -47,8 +51,8 @@ export default function Form() {
           setSubject("");
           setCheckinDate("");
           setCheckoutDate("")
-          setQuantity("")
           setMessage("");
+          setPersonsQuantity("")
         },
         (error) => {
           console.log("ERROR: ", error);
@@ -108,15 +112,14 @@ export default function Form() {
              value={checkoutDate}
             />
         </div>
-        </div>
-        <input
-         className="input-contact" 
-         type="number"  
-         onChange={(e) => setQuantity(e.target.value)}
-         min="1" 
-         step="12"
-         value={quantity}
-        />
+        </div> 
+         <label htmlFor="numero">Escolha um número:</label>
+         <select  className="input-contact" id="numero" value={personsQuantity} onChange={handleSelection}>
+            <option value="">Selecione...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
         <textarea
           className="input-contact message"
           type="text"
