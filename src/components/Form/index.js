@@ -9,6 +9,9 @@ export default function Form() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [checkinDate, setCheckinDate] = useState("");
+  const [checkoutDate, setCheckoutDate] = useState("");
+  const [quantity, setQuantity] = useState("")
 
   function handleEmail(e) {
     e.preventDefault();
@@ -21,11 +24,14 @@ export default function Form() {
 
     const templateParams = {
       from_name: name,
-      message: message,
-      email: email,
-      subject
+      message,
+      email,
+      subject,
+      checkinDate,
+      checkoutDate,
+      quantity
     };
-
+    console.log(name, message, email, subject, checkinDate);//remover
     emailjs
       .send(
         "service_2ri0lrh",
@@ -35,10 +41,13 @@ export default function Form() {
       )
       .then(
         (res) => {
-          console.log("Email enviado", res.status, res.text);
+          console.log("Email enviado", res.status, res.text);//remover
           setName("");
           setEmail("");
           setSubject("");
+          setCheckinDate("");
+          setCheckoutDate("")
+          setQuantity("")
           setMessage("");
         },
         (error) => {
@@ -79,6 +88,34 @@ export default function Form() {
           placeholder="Assunto"
           onChange={(e) => setSubject(e.target.value)}
           value={subject}
+        />
+        <div className="div-date"> 
+          <div className="div-span-date">
+            <span>Data de entrada</span>
+            <input 
+            className="input-contact date" 
+            type="date"  
+            onChange={(e) => setCheckinDate(e.target.value)}
+            value={checkinDate}
+            />
+          </div>
+          <div className="div-span-date">
+            <span>Data de saída</span>
+            <input 
+             className="input-contact date" 
+             type="date"  
+             onChange={(e) => setCheckoutDate(e.target.value)}
+             value={checkoutDate}
+            />
+        </div>
+        </div>
+        <input
+         className="input-contact" 
+         type="number"  
+         onChange={(e) => setQuantity(e.target.value)}
+         min="1" 
+         step="12"
+         value={quantity}
         />
         <textarea
           className="input-contact message"
