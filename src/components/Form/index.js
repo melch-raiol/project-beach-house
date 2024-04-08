@@ -86,16 +86,16 @@ export default function Form() {
           onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
-        <input
+        {/* <input
           className="input-contact"
           type="text"
           placeholder="Assunto"
           onChange={(e) => setSubject(e.target.value)}
           value={subject}
-        />
+        /> */}
         <div className="div-date"> 
           <div className="div-span-date">
-            <span>Data de entrada</span>
+            <span className="span-form">Data de entrada</span>
             <input 
             className="input-contact date" 
             type="date"  
@@ -104,7 +104,7 @@ export default function Form() {
             />
           </div>
           <div className="div-span-date">
-            <span>Data de saída</span>
+            <span className="span-form">Data de saída</span>
             <input 
              className="input-contact date" 
              type="date"  
@@ -113,12 +113,18 @@ export default function Form() {
             />
         </div>
         </div> 
-         <label htmlFor="numero">Escolha um número:</label>
+        <span className="span-form span-form-select">Quantidade de pessoas:</span>
          <select  className="input-contact" id="numero" value={personsQuantity} onChange={handleSelection}>
-            <option value="">Selecione...</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
           </select>
         <textarea
           className="input-contact message"

@@ -1,5 +1,5 @@
 .container-form {
-  height: 90%;
+  height: 100%;
   width: clamp(300px, 90%, 800px);
 
   display: flex;
@@ -11,11 +11,11 @@
 }
 
 .tolk-to-us {
-  margin-bottom: 10%;
+  margin-bottom: 1%;
 }
 
 .form {
-  height: 60%;
+  height: 100%;
   width: clamp(300px, 90%, 700px);
 
   display: flex;
@@ -32,6 +32,7 @@
   width: clamp(250px, 90%, 500px);
   border-radius: 10px;
   padding: 10px;
+ 
 }
 
 .input-contact,
@@ -80,6 +81,14 @@ textarea::placeholder {
   /* border: 1px solid blue ; */
 }
 
+.span-form{
+ width: 90%;
+}
+
+.span-form-select{
+  width: 69%;
+ }
+
 @media (max-width: 800px) {
   .container-form {
     height: 95%;
@@ -93,4 +102,8 @@ textarea::placeholder {
   .tolk-to-us {
     font-size: 2em;
   }
+
+  .span-form-select{
+    width: 85%;
+   }
 }
