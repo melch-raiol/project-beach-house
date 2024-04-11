@@ -64,7 +64,6 @@ textarea::placeholder {
   display: flex;
   justify-content:space-between;
   /* border: 1px solid red ; */
-
 }
 
 .date{
@@ -79,6 +78,12 @@ textarea::placeholder {
   flex-direction: column;
   align-items: center;
   /* border: 1px solid blue ; */
+}
+
+.div-span-date > span{
+  height: 35%;
+  width: 100%;
+  /* border: 1px solid green; */
 }
 
 .span-form{

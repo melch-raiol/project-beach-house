@@ -7,20 +7,25 @@ import "./styles.css";
 export default function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
+  const [subject, setSubject] = useState("Aluguel das casas");
   const [message, setMessage] = useState("");
   const [checkinDate, setCheckinDate] = useState("");
   const [checkoutDate, setCheckoutDate] = useState("");
-  const [personsQuantity, setPersonsQuantity] = useState("");
+  const [adultQuantity, setAdultQuantity] = useState("");
+  const [childQuantity, setChildQuantity] = useState("");
 
-  const handleSelection = (event) => {
-    setPersonsQuantity(event.target.value);
+  const handleAdultSelection = (event) => {
+    setAdultQuantity(event.target.value);
+  };
+
+  const handleChildSelection = (event) => {
+    setChildQuantity(event.target.value);
   };
 
   function handleEmail(e) {
     e.preventDefault();
 
-    if (name === "" || email === "" || subject === "" || message === "") {
+    if (name === "" || email === "" || message === "") {
       return toast.error("PREENCHA TODOS OS CAMPOS!", {
         position: toast.POSITION.TOP_CENTER,
       });
@@ -33,9 +38,10 @@ export default function Form() {
       subject,
       checkinDate,
       checkoutDate,
-      personsQuantity
+      adultQuantity,
+      childQuantity
     };
-    console.log(name, message, email, subject, checkinDate, personsQuantity);//remover
+    console.log(name, message, email, subject, checkinDate, adultQuantity);//remover
     emailjs
       .send(
         "service_2ri0lrh",
@@ -52,7 +58,8 @@ export default function Form() {
           setCheckinDate("");
           setCheckoutDate("")
           setMessage("");
-          setPersonsQuantity("")
+          setAdultQuantity("")
+          setChildQuantity("")
         },
         (error) => {
           console.log("ERROR: ", error);
@@ -75,14 +82,14 @@ export default function Form() {
         <input
           className="input-contact"
           type="name"
-          placeholder="Nome"
+          placeholder="seu nome"
           onChange={(e) => setName(e.target.value)}
           value={name}
         />
         <input
           className="input-contact"
           type="email"
-          placeholder="Email"
+          placeholder="seu email"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
@@ -95,7 +102,7 @@ export default function Form() {
         /> */}
         <div className="div-date"> 
           <div className="div-span-date">
-            <span className="span-form">Data de entrada</span>
+            <span className="span-form">Data de entrada:</span>
             <input 
             className="input-contact date" 
             type="date"  
@@ -104,7 +111,7 @@ export default function Form() {
             />
           </div>
           <div className="div-span-date">
-            <span className="span-form">Data de saída</span>
+            <span className="span-form">Data de saída:</span>
             <input 
              className="input-contact date" 
              type="date"  
@@ -113,8 +120,10 @@ export default function Form() {
             />
         </div>
         </div> 
-        <span className="span-form span-form-select">Quantidade de pessoas:</span>
-         <select  className="input-contact" id="numero" value={personsQuantity} onChange={handleSelection}>
+        <div className="div-date">
+        <div className="div-span-date">
+        <span className="span-form span-form-select">Quantidade de adultos:</span>
+         <select  className="input-contact date" id="numero" value={adultQuantity} onChange={handleAdultSelection}>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -126,6 +135,24 @@ export default function Form() {
             <option value="9">9</option>
             <option value="10">10</option>
           </select>
+        </div>
+        <div className="div-span-date">
+          <span className="span-form span-form-select">Quantidade de crianças:</span>
+         <select  className="input-contact date" id="numero" value={childQuantity} onChange={handleChildSelection}>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        </div>
         <textarea
           className="input-contact message"
           type="text"
